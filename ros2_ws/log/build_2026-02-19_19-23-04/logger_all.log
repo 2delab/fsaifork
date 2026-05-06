@@ -1,0 +1,564 @@
+[0.107s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.107s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=20, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7780cb969780>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7780cb968b20>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7780cb968b20>>, mixin_verb=('build',))
+[0.254s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.254s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.254s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.254s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.254s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.254s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.254s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/mdxfsai/FS_autonomous/ros/ros2_ws'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_msgs) by extension 'ignore'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_msgs) by extension 'ignore_ament_install'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_msgs) by extensions ['colcon_pkg']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_msgs) by extension 'colcon_pkg'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_msgs) by extensions ['colcon_meta']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_msgs) by extension 'colcon_meta'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_msgs) by extensions ['ros']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_msgs) by extension 'ros'
+[0.270s] DEBUG:colcon.colcon_core.package_identification:Package 'src/camera_msgs' with type 'ros.ament_cmake' and name 'camera_msgs'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/carmaker_rsds_client) by extensions ['ignore', 'ignore_ament_install']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/carmaker_rsds_client) by extension 'ignore'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/carmaker_rsds_client) by extension 'ignore_ament_install'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/carmaker_rsds_client) by extensions ['colcon_pkg']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/carmaker_rsds_client) by extension 'colcon_pkg'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/carmaker_rsds_client) by extensions ['colcon_meta']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/carmaker_rsds_client) by extension 'colcon_meta'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/carmaker_rsds_client) by extensions ['ros']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/carmaker_rsds_client) by extension 'ros'
+[0.272s] DEBUG:colcon.colcon_core.package_identification:Package 'src/carmaker_rsds_client' with type 'ros.ament_cmake' and name 'carmaker_rsds_client'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmrosutils) by extensions ['ignore', 'ignore_ament_install']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmrosutils) by extension 'ignore'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmrosutils) by extension 'ignore_ament_install'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmrosutils) by extensions ['colcon_pkg']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmrosutils) by extension 'colcon_pkg'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmrosutils) by extensions ['colcon_meta']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmrosutils) by extension 'colcon_meta'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmrosutils) by extensions ['ros']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmrosutils) by extension 'ros'
+[0.273s] DEBUG:colcon.colcon_core.package_identification:Package 'src/cmrosutils' with type 'ros.ament_cmake' and name 'cmrosutils'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/hellocm) by extensions ['ignore', 'ignore_ament_install']
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/hellocm) by extension 'ignore'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/hellocm) by extension 'ignore_ament_install'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/hellocm) by extensions ['colcon_pkg']
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/hellocm) by extension 'colcon_pkg'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/hellocm) by extensions ['colcon_meta']
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/hellocm) by extension 'colcon_meta'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/hellocm) by extensions ['ros']
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/hellocm) by extension 'ros'
+[0.274s] DEBUG:colcon.colcon_core.package_identification:Package 'src/hellocm' with type 'ros.ament_cmake' and name 'hellocm'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/hellocm_cmnode) by extensions ['ignore', 'ignore_ament_install']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/hellocm_cmnode) by extension 'ignore'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/hellocm_cmnode) by extension 'ignore_ament_install'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/hellocm_cmnode) by extensions ['colcon_pkg']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/hellocm_cmnode) by extension 'colcon_pkg'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/hellocm_cmnode) by extensions ['colcon_meta']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/hellocm_cmnode) by extension 'colcon_meta'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/hellocm_cmnode) by extensions ['ros']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/hellocm_cmnode) by extension 'ros'
+[0.275s] DEBUG:colcon.colcon_core.package_identification:Package 'src/hellocm_cmnode' with type 'ros.ament_cmake' and name 'hellocm_cmnode'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/hellocm_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/hellocm_msgs) by extension 'ignore'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/hellocm_msgs) by extension 'ignore_ament_install'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/hellocm_msgs) by extensions ['colcon_pkg']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/hellocm_msgs) by extension 'colcon_pkg'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/hellocm_msgs) by extensions ['colcon_meta']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/hellocm_msgs) by extension 'colcon_meta'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/hellocm_msgs) by extensions ['ros']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/hellocm_msgs) by extension 'ros'
+[0.276s] DEBUG:colcon.colcon_core.package_identification:Package 'src/hellocm_msgs' with type 'ros.ament_cmake' and name 'hellocm_msgs'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/vehiclecontrol_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/vehiclecontrol_msgs) by extension 'ignore'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/vehiclecontrol_msgs) by extension 'ignore_ament_install'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/vehiclecontrol_msgs) by extensions ['colcon_pkg']
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/vehiclecontrol_msgs) by extension 'colcon_pkg'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/vehiclecontrol_msgs) by extensions ['colcon_meta']
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/vehiclecontrol_msgs) by extension 'colcon_meta'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/vehiclecontrol_msgs) by extensions ['ros']
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/vehiclecontrol_msgs) by extension 'ros'
+[0.277s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vehiclecontrol_msgs' with type 'ros.ament_cmake' and name 'vehiclecontrol_msgs'
+[0.277s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.277s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.277s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.277s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.277s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.306s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.306s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.309s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 274 installed packages in /opt/ros/humble
+[0.310s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'camera_msgs' build argument 'cmake_args' from command line to 'None'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'camera_msgs' build argument 'cmake_target' from command line to 'None'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'camera_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'camera_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'camera_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'camera_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'camera_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'camera_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'camera_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.343s] DEBUG:colcon.colcon_core.verb:Building package 'camera_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mdxfsai/FS_autonomous/ros/ros2_ws/build/camera_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs', 'merge_install': False, 'path': '/home/mdxfsai/FS_autonomous/ros/ros2_ws/src/camera_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'cmrosutils' build argument 'cmake_args' from command line to 'None'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'cmrosutils' build argument 'cmake_target' from command line to 'None'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'cmrosutils' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'cmrosutils' build argument 'cmake_clean_cache' from command line to 'False'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'cmrosutils' build argument 'cmake_clean_first' from command line to 'False'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'cmrosutils' build argument 'cmake_force_configure' from command line to 'False'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'cmrosutils' build argument 'ament_cmake_args' from command line to 'None'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'cmrosutils' build argument 'catkin_cmake_args' from command line to 'None'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'cmrosutils' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.344s] DEBUG:colcon.colcon_core.verb:Building package 'cmrosutils' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mdxfsai/FS_autonomous/ros/ros2_ws/build/cmrosutils', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils', 'merge_install': False, 'path': '/home/mdxfsai/FS_autonomous/ros/ros2_ws/src/cmrosutils', 'symlink_install': False, 'test_result_base': None}
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'hellocm_msgs' build argument 'cmake_args' from command line to 'None'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'hellocm_msgs' build argument 'cmake_target' from command line to 'None'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'hellocm_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'hellocm_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'hellocm_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'hellocm_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'hellocm_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'hellocm_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'hellocm_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.345s] DEBUG:colcon.colcon_core.verb:Building package 'hellocm_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mdxfsai/FS_autonomous/ros/ros2_ws/build/hellocm_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs', 'merge_install': False, 'path': '/home/mdxfsai/FS_autonomous/ros/ros2_ws/src/hellocm_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'vehiclecontrol_msgs' build argument 'cmake_args' from command line to 'None'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'vehiclecontrol_msgs' build argument 'cmake_target' from command line to 'None'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'vehiclecontrol_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'vehiclecontrol_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'vehiclecontrol_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'vehiclecontrol_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'vehiclecontrol_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'vehiclecontrol_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'vehiclecontrol_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.345s] DEBUG:colcon.colcon_core.verb:Building package 'vehiclecontrol_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mdxfsai/FS_autonomous/ros/ros2_ws/build/vehiclecontrol_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs', 'merge_install': False, 'path': '/home/mdxfsai/FS_autonomous/ros/ros2_ws/src/vehiclecontrol_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'carmaker_rsds_client' build argument 'cmake_args' from command line to 'None'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'carmaker_rsds_client' build argument 'cmake_target' from command line to 'None'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'carmaker_rsds_client' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'carmaker_rsds_client' build argument 'cmake_clean_cache' from command line to 'False'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'carmaker_rsds_client' build argument 'cmake_clean_first' from command line to 'False'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'carmaker_rsds_client' build argument 'cmake_force_configure' from command line to 'False'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'carmaker_rsds_client' build argument 'ament_cmake_args' from command line to 'None'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'carmaker_rsds_client' build argument 'catkin_cmake_args' from command line to 'None'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'carmaker_rsds_client' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.346s] DEBUG:colcon.colcon_core.verb:Building package 'carmaker_rsds_client' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mdxfsai/FS_autonomous/ros/ros2_ws/build/carmaker_rsds_client', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/carmaker_rsds_client', 'merge_install': False, 'path': '/home/mdxfsai/FS_autonomous/ros/ros2_ws/src/carmaker_rsds_client', 'symlink_install': False, 'test_result_base': None}
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'hellocm' build argument 'cmake_args' from command line to 'None'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'hellocm' build argument 'cmake_target' from command line to 'None'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'hellocm' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'hellocm' build argument 'cmake_clean_cache' from command line to 'False'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'hellocm' build argument 'cmake_clean_first' from command line to 'False'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'hellocm' build argument 'cmake_force_configure' from command line to 'False'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'hellocm' build argument 'ament_cmake_args' from command line to 'None'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'hellocm' build argument 'catkin_cmake_args' from command line to 'None'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'hellocm' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.346s] DEBUG:colcon.colcon_core.verb:Building package 'hellocm' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mdxfsai/FS_autonomous/ros/ros2_ws/build/hellocm', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm', 'merge_install': False, 'path': '/home/mdxfsai/FS_autonomous/ros/ros2_ws/src/hellocm', 'symlink_install': False, 'test_result_base': None}
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'hellocm_cmnode' build argument 'cmake_args' from command line to 'None'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'hellocm_cmnode' build argument 'cmake_target' from command line to 'None'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'hellocm_cmnode' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'hellocm_cmnode' build argument 'cmake_clean_cache' from command line to 'False'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'hellocm_cmnode' build argument 'cmake_clean_first' from command line to 'False'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'hellocm_cmnode' build argument 'cmake_force_configure' from command line to 'False'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'hellocm_cmnode' build argument 'ament_cmake_args' from command line to 'None'
+[0.347s] Level 5:colcon.colcon_core.verb:set package 'hellocm_cmnode' build argument 'catkin_cmake_args' from command line to 'None'
+[0.347s] Level 5:colcon.colcon_core.verb:set package 'hellocm_cmnode' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.347s] DEBUG:colcon.colcon_core.verb:Building package 'hellocm_cmnode' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mdxfsai/FS_autonomous/ros/ros2_ws/build/hellocm_cmnode', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode', 'merge_install': False, 'path': '/home/mdxfsai/FS_autonomous/ros/ros2_ws/src/hellocm_cmnode', 'symlink_install': False, 'test_result_base': None}
+[0.347s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.348s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.348s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mdxfsai/FS_autonomous/ros/ros2_ws/src/camera_msgs' with build type 'ament_cmake'
+[0.348s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mdxfsai/FS_autonomous/ros/ros2_ws/src/camera_msgs'
+[0.350s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.350s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.350s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.353s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mdxfsai/FS_autonomous/ros/ros2_ws/src/cmrosutils' with build type 'ament_cmake'
+[0.353s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mdxfsai/FS_autonomous/ros/ros2_ws/src/cmrosutils'
+[0.353s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.353s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.356s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mdxfsai/FS_autonomous/ros/ros2_ws/src/hellocm_msgs' with build type 'ament_cmake'
+[0.356s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mdxfsai/FS_autonomous/ros/ros2_ws/src/hellocm_msgs'
+[0.356s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.356s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.359s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mdxfsai/FS_autonomous/ros/ros2_ws/src/vehiclecontrol_msgs' with build type 'ament_cmake'
+[0.359s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mdxfsai/FS_autonomous/ros/ros2_ws/src/vehiclecontrol_msgs'
+[0.359s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.359s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.366s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mdxfsai/FS_autonomous/ros/ros2_ws/build/camera_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mdxfsai/FS_autonomous/ros/ros2_ws/build/camera_msgs -- -j20 -l20
+[0.368s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mdxfsai/FS_autonomous/ros/ros2_ws/build/cmrosutils': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mdxfsai/FS_autonomous/ros/ros2_ws/build/cmrosutils -- -j20 -l20
+[0.370s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mdxfsai/FS_autonomous/ros/ros2_ws/build/hellocm_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mdxfsai/FS_autonomous/ros/ros2_ws/build/hellocm_msgs -- -j20 -l20
+[0.376s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mdxfsai/FS_autonomous/ros/ros2_ws/build/vehiclecontrol_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mdxfsai/FS_autonomous/ros/ros2_ws/build/vehiclecontrol_msgs -- -j20 -l20
+[0.723s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mdxfsai/FS_autonomous/ros/ros2_ws/build/camera_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mdxfsai/FS_autonomous/ros/ros2_ws/build/camera_msgs -- -j20 -l20
+[0.737s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mdxfsai/FS_autonomous/ros/ros2_ws/build/camera_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mdxfsai/FS_autonomous/ros/ros2_ws/build/camera_msgs
+[0.742s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mdxfsai/FS_autonomous/ros/ros2_ws/build/vehiclecontrol_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mdxfsai/FS_autonomous/ros/ros2_ws/build/vehiclecontrol_msgs -- -j20 -l20
+[0.750s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mdxfsai/FS_autonomous/ros/ros2_ws/build/vehiclecontrol_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mdxfsai/FS_autonomous/ros/ros2_ws/build/vehiclecontrol_msgs
+[0.751s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mdxfsai/FS_autonomous/ros/ros2_ws/build/cmrosutils' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mdxfsai/FS_autonomous/ros/ros2_ws/build/cmrosutils -- -j20 -l20
+[0.753s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mdxfsai/FS_autonomous/ros/ros2_ws/build/cmrosutils': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mdxfsai/FS_autonomous/ros/ros2_ws/build/cmrosutils
+[0.790s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mdxfsai/FS_autonomous/ros/ros2_ws/build/hellocm_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mdxfsai/FS_autonomous/ros/ros2_ws/build/hellocm_msgs -- -j20 -l20
+[0.792s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mdxfsai/FS_autonomous/ros/ros2_ws/build/hellocm_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mdxfsai/FS_autonomous/ros/ros2_ws/build/hellocm_msgs
+[0.792s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(camera_msgs)
+[0.792s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mdxfsai/FS_autonomous/ros/ros2_ws/build/camera_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mdxfsai/FS_autonomous/ros/ros2_ws/build/camera_msgs
+[0.794s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs' for CMake module files
+[0.795s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs' for CMake config files
+[0.795s] Level 1:colcon.colcon_core.shell:create_environment_hook('camera_msgs', 'cmake_prefix_path')
+[0.796s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs/share/camera_msgs/hook/cmake_prefix_path.ps1'
+[0.796s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs/share/camera_msgs/hook/cmake_prefix_path.dsv'
+[0.797s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs/share/camera_msgs/hook/cmake_prefix_path.sh'
+[0.798s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs/lib'
+[0.799s] Level 1:colcon.colcon_core.shell:create_environment_hook('camera_msgs', 'ld_library_path_lib')
+[0.799s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs/share/camera_msgs/hook/ld_library_path_lib.ps1'
+[0.800s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs/share/camera_msgs/hook/ld_library_path_lib.dsv'
+[0.800s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs/share/camera_msgs/hook/ld_library_path_lib.sh'
+[0.801s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs/bin'
+[0.801s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs/lib/pkgconfig/camera_msgs.pc'
+[0.801s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs/lib/python3.10/site-packages'
+[0.802s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs/bin'
+[0.802s] INFO:colcon.colcon_core.shell:Creating package script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs/share/camera_msgs/package.ps1'
+[0.803s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs/share/camera_msgs/package.dsv'
+[0.804s] INFO:colcon.colcon_core.shell:Creating package script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs/share/camera_msgs/package.sh'
+[0.805s] INFO:colcon.colcon_core.shell:Creating package script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs/share/camera_msgs/package.bash'
+[0.806s] INFO:colcon.colcon_core.shell:Creating package script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs/share/camera_msgs/package.zsh'
+[0.807s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs/share/colcon-core/packages/camera_msgs)
+[0.808s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(camera_msgs)
+[0.808s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs' for CMake module files
+[0.809s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs' for CMake config files
+[0.812s] Level 1:colcon.colcon_core.shell:create_environment_hook('camera_msgs', 'cmake_prefix_path')
+[0.812s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs/share/camera_msgs/hook/cmake_prefix_path.ps1'
+[0.813s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs/share/camera_msgs/hook/cmake_prefix_path.dsv'
+[0.814s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs/share/camera_msgs/hook/cmake_prefix_path.sh'
+[0.815s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs/lib'
+[0.815s] Level 1:colcon.colcon_core.shell:create_environment_hook('camera_msgs', 'ld_library_path_lib')
+[0.815s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs/share/camera_msgs/hook/ld_library_path_lib.ps1'
+[0.816s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs/share/camera_msgs/hook/ld_library_path_lib.dsv'
+[0.816s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs/share/camera_msgs/hook/ld_library_path_lib.sh'
+[0.817s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs/bin'
+[0.817s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs/lib/pkgconfig/camera_msgs.pc'
+[0.817s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs/lib/python3.10/site-packages'
+[0.818s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs/bin'
+[0.818s] INFO:colcon.colcon_core.shell:Creating package script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs/share/camera_msgs/package.ps1'
+[0.819s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs/share/camera_msgs/package.dsv'
+[0.819s] INFO:colcon.colcon_core.shell:Creating package script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs/share/camera_msgs/package.sh'
+[0.820s] INFO:colcon.colcon_core.shell:Creating package script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs/share/camera_msgs/package.bash'
+[0.821s] INFO:colcon.colcon_core.shell:Creating package script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs/share/camera_msgs/package.zsh'
+[0.821s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs/share/colcon-core/packages/camera_msgs)
+[0.823s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vehiclecontrol_msgs)
+[0.824s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs' for CMake module files
+[0.833s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mdxfsai/FS_autonomous/ros/ros2_ws/build/vehiclecontrol_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mdxfsai/FS_autonomous/ros/ros2_ws/build/vehiclecontrol_msgs
+[0.834s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs' for CMake config files
+[0.835s] Level 1:colcon.colcon_core.shell:create_environment_hook('vehiclecontrol_msgs', 'cmake_prefix_path')
+[0.835s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs/share/vehiclecontrol_msgs/hook/cmake_prefix_path.ps1'
+[0.836s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs/share/vehiclecontrol_msgs/hook/cmake_prefix_path.dsv'
+[0.836s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs/share/vehiclecontrol_msgs/hook/cmake_prefix_path.sh'
+[0.837s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs/lib'
+[0.837s] Level 1:colcon.colcon_core.shell:create_environment_hook('vehiclecontrol_msgs', 'ld_library_path_lib')
+[0.838s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs/share/vehiclecontrol_msgs/hook/ld_library_path_lib.ps1'
+[0.839s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs/share/vehiclecontrol_msgs/hook/ld_library_path_lib.dsv'
+[0.839s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs/share/vehiclecontrol_msgs/hook/ld_library_path_lib.sh'
+[0.840s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs/bin'
+[0.840s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs/lib/pkgconfig/vehiclecontrol_msgs.pc'
+[0.840s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs/lib/python3.10/site-packages'
+[0.841s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs/bin'
+[0.842s] INFO:colcon.colcon_core.shell:Creating package script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs/share/vehiclecontrol_msgs/package.ps1'
+[0.843s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs/share/vehiclecontrol_msgs/package.dsv'
+[0.847s] INFO:colcon.colcon_core.shell:Creating package script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs/share/vehiclecontrol_msgs/package.sh'
+[0.847s] INFO:colcon.colcon_core.shell:Creating package script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs/share/vehiclecontrol_msgs/package.bash'
+[0.848s] INFO:colcon.colcon_core.shell:Creating package script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs/share/vehiclecontrol_msgs/package.zsh'
+[0.848s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs/share/colcon-core/packages/vehiclecontrol_msgs)
+[0.849s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vehiclecontrol_msgs)
+[0.849s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs' for CMake module files
+[0.850s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs' for CMake config files
+[0.850s] Level 1:colcon.colcon_core.shell:create_environment_hook('vehiclecontrol_msgs', 'cmake_prefix_path')
+[0.850s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs/share/vehiclecontrol_msgs/hook/cmake_prefix_path.ps1'
+[0.850s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs/share/vehiclecontrol_msgs/hook/cmake_prefix_path.dsv'
+[0.851s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs/share/vehiclecontrol_msgs/hook/cmake_prefix_path.sh'
+[0.851s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs/lib'
+[0.851s] Level 1:colcon.colcon_core.shell:create_environment_hook('vehiclecontrol_msgs', 'ld_library_path_lib')
+[0.851s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs/share/vehiclecontrol_msgs/hook/ld_library_path_lib.ps1'
+[0.852s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs/share/vehiclecontrol_msgs/hook/ld_library_path_lib.dsv'
+[0.852s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs/share/vehiclecontrol_msgs/hook/ld_library_path_lib.sh'
+[0.852s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs/bin'
+[0.852s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs/lib/pkgconfig/vehiclecontrol_msgs.pc'
+[0.853s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs/lib/python3.10/site-packages'
+[0.853s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs/bin'
+[0.853s] INFO:colcon.colcon_core.shell:Creating package script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs/share/vehiclecontrol_msgs/package.ps1'
+[0.854s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs/share/vehiclecontrol_msgs/package.dsv'
+[0.854s] INFO:colcon.colcon_core.shell:Creating package script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs/share/vehiclecontrol_msgs/package.sh'
+[0.855s] INFO:colcon.colcon_core.shell:Creating package script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs/share/vehiclecontrol_msgs/package.bash'
+[0.855s] INFO:colcon.colcon_core.shell:Creating package script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs/share/vehiclecontrol_msgs/package.zsh'
+[0.855s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs/share/colcon-core/packages/vehiclecontrol_msgs)
+[0.855s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cmrosutils)
+[0.856s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils' for CMake module files
+[0.857s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mdxfsai/FS_autonomous/ros/ros2_ws/build/cmrosutils' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mdxfsai/FS_autonomous/ros/ros2_ws/build/cmrosutils
+[0.858s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils' for CMake config files
+[0.858s] Level 1:colcon.colcon_core.shell:create_environment_hook('cmrosutils', 'cmake_prefix_path')
+[0.858s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils/share/cmrosutils/hook/cmake_prefix_path.ps1'
+[0.858s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils/share/cmrosutils/hook/cmake_prefix_path.dsv'
+[0.859s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils/share/cmrosutils/hook/cmake_prefix_path.sh'
+[0.859s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils/lib'
+[0.859s] Level 1:colcon.colcon_core.shell:create_environment_hook('cmrosutils', 'ld_library_path_lib')
+[0.860s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils/share/cmrosutils/hook/ld_library_path_lib.ps1'
+[0.860s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils/share/cmrosutils/hook/ld_library_path_lib.dsv'
+[0.860s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils/share/cmrosutils/hook/ld_library_path_lib.sh'
+[0.861s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils/bin'
+[0.861s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils/lib/pkgconfig/cmrosutils.pc'
+[0.861s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils/lib/python3.10/site-packages'
+[0.861s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils/bin'
+[0.862s] INFO:colcon.colcon_core.shell:Creating package script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils/share/cmrosutils/package.ps1'
+[0.862s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils/share/cmrosutils/package.dsv'
+[0.863s] INFO:colcon.colcon_core.shell:Creating package script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils/share/cmrosutils/package.sh'
+[0.863s] INFO:colcon.colcon_core.shell:Creating package script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils/share/cmrosutils/package.bash'
+[0.863s] INFO:colcon.colcon_core.shell:Creating package script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils/share/cmrosutils/package.zsh'
+[0.864s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils/share/colcon-core/packages/cmrosutils)
+[0.864s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cmrosutils)
+[0.864s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils' for CMake module files
+[0.865s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils' for CMake config files
+[0.865s] Level 1:colcon.colcon_core.shell:create_environment_hook('cmrosutils', 'cmake_prefix_path')
+[0.865s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils/share/cmrosutils/hook/cmake_prefix_path.ps1'
+[0.866s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils/share/cmrosutils/hook/cmake_prefix_path.dsv'
+[0.866s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils/share/cmrosutils/hook/cmake_prefix_path.sh'
+[0.867s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils/lib'
+[0.867s] Level 1:colcon.colcon_core.shell:create_environment_hook('cmrosutils', 'ld_library_path_lib')
+[0.867s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils/share/cmrosutils/hook/ld_library_path_lib.ps1'
+[0.867s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils/share/cmrosutils/hook/ld_library_path_lib.dsv'
+[0.867s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils/share/cmrosutils/hook/ld_library_path_lib.sh'
+[0.868s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils/bin'
+[0.868s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils/lib/pkgconfig/cmrosutils.pc'
+[0.868s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils/lib/python3.10/site-packages'
+[0.868s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils/bin'
+[0.869s] INFO:colcon.colcon_core.shell:Creating package script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils/share/cmrosutils/package.ps1'
+[0.869s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils/share/cmrosutils/package.dsv'
+[0.869s] INFO:colcon.colcon_core.shell:Creating package script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils/share/cmrosutils/package.sh'
+[0.870s] INFO:colcon.colcon_core.shell:Creating package script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils/share/cmrosutils/package.bash'
+[0.870s] INFO:colcon.colcon_core.shell:Creating package script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils/share/cmrosutils/package.zsh'
+[0.871s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils/share/colcon-core/packages/cmrosutils)
+[0.871s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mdxfsai/FS_autonomous/ros/ros2_ws/src/carmaker_rsds_client' with build type 'ament_cmake'
+[0.871s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mdxfsai/FS_autonomous/ros/ros2_ws/src/carmaker_rsds_client'
+[0.871s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.871s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.875s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hellocm_msgs)
+[0.876s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs' for CMake module files
+[0.876s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mdxfsai/FS_autonomous/ros/ros2_ws/build/hellocm_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mdxfsai/FS_autonomous/ros/ros2_ws/build/hellocm_msgs
+[0.878s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs' for CMake config files
+[0.879s] Level 1:colcon.colcon_core.shell:create_environment_hook('hellocm_msgs', 'cmake_prefix_path')
+[0.879s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/share/hellocm_msgs/hook/cmake_prefix_path.ps1'
+[0.880s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/share/hellocm_msgs/hook/cmake_prefix_path.dsv'
+[0.880s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/share/hellocm_msgs/hook/cmake_prefix_path.sh'
+[0.881s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/lib'
+[0.882s] Level 1:colcon.colcon_core.shell:create_environment_hook('hellocm_msgs', 'ld_library_path_lib')
+[0.882s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/share/hellocm_msgs/hook/ld_library_path_lib.ps1'
+[0.883s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/share/hellocm_msgs/hook/ld_library_path_lib.dsv'
+[0.883s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/share/hellocm_msgs/hook/ld_library_path_lib.sh'
+[0.884s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/bin'
+[0.884s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/lib/pkgconfig/hellocm_msgs.pc'
+[0.884s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/lib/python3.10/site-packages'
+[0.885s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/bin'
+[0.886s] INFO:colcon.colcon_core.shell:Creating package script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/share/hellocm_msgs/package.ps1'
+[0.886s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/share/hellocm_msgs/package.dsv'
+[0.887s] INFO:colcon.colcon_core.shell:Creating package script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/share/hellocm_msgs/package.sh'
+[0.888s] INFO:colcon.colcon_core.shell:Creating package script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/share/hellocm_msgs/package.bash'
+[0.888s] INFO:colcon.colcon_core.shell:Creating package script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/share/hellocm_msgs/package.zsh'
+[0.889s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/share/colcon-core/packages/hellocm_msgs)
+[0.890s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hellocm_msgs)
+[0.890s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs' for CMake module files
+[0.891s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs' for CMake config files
+[0.891s] Level 1:colcon.colcon_core.shell:create_environment_hook('hellocm_msgs', 'cmake_prefix_path')
+[0.891s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/share/hellocm_msgs/hook/cmake_prefix_path.ps1'
+[0.892s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/share/hellocm_msgs/hook/cmake_prefix_path.dsv'
+[0.892s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/share/hellocm_msgs/hook/cmake_prefix_path.sh'
+[0.893s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/lib'
+[0.893s] Level 1:colcon.colcon_core.shell:create_environment_hook('hellocm_msgs', 'ld_library_path_lib')
+[0.893s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/share/hellocm_msgs/hook/ld_library_path_lib.ps1'
+[0.893s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/share/hellocm_msgs/hook/ld_library_path_lib.dsv'
+[0.893s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/share/hellocm_msgs/hook/ld_library_path_lib.sh'
+[0.894s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/bin'
+[0.894s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/lib/pkgconfig/hellocm_msgs.pc'
+[0.894s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/lib/python3.10/site-packages'
+[0.894s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/bin'
+[0.895s] INFO:colcon.colcon_core.shell:Creating package script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/share/hellocm_msgs/package.ps1'
+[0.895s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/share/hellocm_msgs/package.dsv'
+[0.896s] INFO:colcon.colcon_core.shell:Creating package script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/share/hellocm_msgs/package.sh'
+[0.896s] INFO:colcon.colcon_core.shell:Creating package script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/share/hellocm_msgs/package.bash'
+[0.897s] INFO:colcon.colcon_core.shell:Creating package script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/share/hellocm_msgs/package.zsh'
+[0.897s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/share/colcon-core/packages/hellocm_msgs)
+[0.897s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mdxfsai/FS_autonomous/ros/ros2_ws/src/hellocm' with build type 'ament_cmake'
+[0.898s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mdxfsai/FS_autonomous/ros/ros2_ws/src/hellocm'
+[0.898s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.898s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.901s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mdxfsai/FS_autonomous/ros/ros2_ws/src/hellocm_cmnode' with build type 'ament_cmake'
+[0.901s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mdxfsai/FS_autonomous/ros/ros2_ws/src/hellocm_cmnode'
+[0.901s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.901s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.908s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mdxfsai/FS_autonomous/ros/ros2_ws/build/carmaker_rsds_client': AMENT_PREFIX_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils/lib:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils/local/lib/python3.10/dist-packages:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mdxfsai/FS_autonomous/ros/ros2_ws/build/carmaker_rsds_client -- -j20 -l20
+[0.910s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mdxfsai/FS_autonomous/ros/ros2_ws/build/hellocm': AMENT_PREFIX_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mdxfsai/FS_autonomous/ros/ros2_ws/build/hellocm -- -j20 -l20
+[0.920s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mdxfsai/FS_autonomous/ros/ros2_ws/build/hellocm_cmnode': AMENT_PREFIX_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs/lib:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/lib:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils/lib:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs/local/lib/python3.10/dist-packages:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/local/lib/python3.10/dist-packages:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils/local/lib/python3.10/dist-packages:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mdxfsai/FS_autonomous/ros/ros2_ws/build/hellocm_cmnode -- -j20 -l20
+[0.980s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mdxfsai/FS_autonomous/ros/ros2_ws/build/hellocm' returned '0': AMENT_PREFIX_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mdxfsai/FS_autonomous/ros/ros2_ws/build/hellocm -- -j20 -l20
+[0.982s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mdxfsai/FS_autonomous/ros/ros2_ws/build/hellocm': AMENT_PREFIX_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/mdxfsai/FS_autonomous/ros/ros2_ws/build/hellocm
+[0.989s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mdxfsai/FS_autonomous/ros/ros2_ws/build/carmaker_rsds_client' returned '0': AMENT_PREFIX_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils/lib:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils/local/lib/python3.10/dist-packages:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mdxfsai/FS_autonomous/ros/ros2_ws/build/carmaker_rsds_client -- -j20 -l20
+[0.990s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mdxfsai/FS_autonomous/ros/ros2_ws/build/carmaker_rsds_client': AMENT_PREFIX_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils/lib:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils/local/lib/python3.10/dist-packages:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/mdxfsai/FS_autonomous/ros/ros2_ws/build/carmaker_rsds_client
+[0.995s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hellocm)
+[0.996s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm' for CMake module files
+[0.997s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mdxfsai/FS_autonomous/ros/ros2_ws/build/hellocm' returned '0': AMENT_PREFIX_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/mdxfsai/FS_autonomous/ros/ros2_ws/build/hellocm
+[0.997s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm' for CMake config files
+[0.998s] Level 1:colcon.colcon_core.shell:create_environment_hook('hellocm', 'cmake_prefix_path')
+[0.998s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm/share/hellocm/hook/cmake_prefix_path.ps1'
+[0.998s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm/share/hellocm/hook/cmake_prefix_path.dsv'
+[0.999s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm/share/hellocm/hook/cmake_prefix_path.sh'
+[0.999s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm/lib'
+[1.000s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm/bin'
+[1.000s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm/lib/pkgconfig/hellocm.pc'
+[1.000s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm/lib/python3.10/site-packages'
+[1.000s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm/bin'
+[1.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm/share/hellocm/package.ps1'
+[1.002s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm/share/hellocm/package.dsv'
+[1.003s] INFO:colcon.colcon_core.shell:Creating package script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm/share/hellocm/package.sh'
+[1.003s] INFO:colcon.colcon_core.shell:Creating package script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm/share/hellocm/package.bash'
+[1.003s] INFO:colcon.colcon_core.shell:Creating package script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm/share/hellocm/package.zsh'
+[1.004s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm/share/colcon-core/packages/hellocm)
+[1.004s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hellocm)
+[1.004s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm' for CMake module files
+[1.005s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm' for CMake config files
+[1.005s] Level 1:colcon.colcon_core.shell:create_environment_hook('hellocm', 'cmake_prefix_path')
+[1.005s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm/share/hellocm/hook/cmake_prefix_path.ps1'
+[1.006s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm/share/hellocm/hook/cmake_prefix_path.dsv'
+[1.006s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm/share/hellocm/hook/cmake_prefix_path.sh'
+[1.006s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm/lib'
+[1.006s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm/bin'
+[1.006s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm/lib/pkgconfig/hellocm.pc'
+[1.007s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm/lib/python3.10/site-packages'
+[1.007s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm/bin'
+[1.007s] INFO:colcon.colcon_core.shell:Creating package script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm/share/hellocm/package.ps1'
+[1.008s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm/share/hellocm/package.dsv'
+[1.008s] INFO:colcon.colcon_core.shell:Creating package script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm/share/hellocm/package.sh'
+[1.009s] INFO:colcon.colcon_core.shell:Creating package script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm/share/hellocm/package.bash'
+[1.009s] INFO:colcon.colcon_core.shell:Creating package script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm/share/hellocm/package.zsh'
+[1.009s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm/share/colcon-core/packages/hellocm)
+[1.010s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(carmaker_rsds_client)
+[1.011s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mdxfsai/FS_autonomous/ros/ros2_ws/build/carmaker_rsds_client' returned '0': AMENT_PREFIX_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils/lib:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils/local/lib/python3.10/dist-packages:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/mdxfsai/FS_autonomous/ros/ros2_ws/build/carmaker_rsds_client
+[1.011s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/carmaker_rsds_client' for CMake module files
+[1.012s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/carmaker_rsds_client' for CMake config files
+[1.013s] Level 1:colcon.colcon_core.shell:create_environment_hook('carmaker_rsds_client', 'cmake_prefix_path')
+[1.013s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/carmaker_rsds_client/share/carmaker_rsds_client/hook/cmake_prefix_path.ps1'
+[1.014s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/carmaker_rsds_client/share/carmaker_rsds_client/hook/cmake_prefix_path.dsv'
+[1.014s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/carmaker_rsds_client/share/carmaker_rsds_client/hook/cmake_prefix_path.sh'
+[1.015s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/carmaker_rsds_client/lib'
+[1.015s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/carmaker_rsds_client/bin'
+[1.015s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/carmaker_rsds_client/lib/pkgconfig/carmaker_rsds_client.pc'
+[1.015s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/carmaker_rsds_client/lib/python3.10/site-packages'
+[1.015s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/carmaker_rsds_client/bin'
+[1.016s] INFO:colcon.colcon_core.shell:Creating package script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/carmaker_rsds_client/share/carmaker_rsds_client/package.ps1'
+[1.016s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/carmaker_rsds_client/share/carmaker_rsds_client/package.dsv'
+[1.016s] INFO:colcon.colcon_core.shell:Creating package script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/carmaker_rsds_client/share/carmaker_rsds_client/package.sh'
+[1.017s] INFO:colcon.colcon_core.shell:Creating package script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/carmaker_rsds_client/share/carmaker_rsds_client/package.bash'
+[1.017s] INFO:colcon.colcon_core.shell:Creating package script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/carmaker_rsds_client/share/carmaker_rsds_client/package.zsh'
+[1.017s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/carmaker_rsds_client/share/colcon-core/packages/carmaker_rsds_client)
+[1.018s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(carmaker_rsds_client)
+[1.018s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/carmaker_rsds_client' for CMake module files
+[1.018s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/carmaker_rsds_client' for CMake config files
+[1.018s] Level 1:colcon.colcon_core.shell:create_environment_hook('carmaker_rsds_client', 'cmake_prefix_path')
+[1.019s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/carmaker_rsds_client/share/carmaker_rsds_client/hook/cmake_prefix_path.ps1'
+[1.019s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/carmaker_rsds_client/share/carmaker_rsds_client/hook/cmake_prefix_path.dsv'
+[1.019s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/carmaker_rsds_client/share/carmaker_rsds_client/hook/cmake_prefix_path.sh'
+[1.020s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/carmaker_rsds_client/lib'
+[1.020s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/carmaker_rsds_client/bin'
+[1.020s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/carmaker_rsds_client/lib/pkgconfig/carmaker_rsds_client.pc'
+[1.020s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/carmaker_rsds_client/lib/python3.10/site-packages'
+[1.020s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/carmaker_rsds_client/bin'
+[1.021s] INFO:colcon.colcon_core.shell:Creating package script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/carmaker_rsds_client/share/carmaker_rsds_client/package.ps1'
+[1.021s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/carmaker_rsds_client/share/carmaker_rsds_client/package.dsv'
+[1.022s] INFO:colcon.colcon_core.shell:Creating package script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/carmaker_rsds_client/share/carmaker_rsds_client/package.sh'
+[1.022s] INFO:colcon.colcon_core.shell:Creating package script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/carmaker_rsds_client/share/carmaker_rsds_client/package.bash'
+[1.022s] INFO:colcon.colcon_core.shell:Creating package script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/carmaker_rsds_client/share/carmaker_rsds_client/package.zsh'
+[1.023s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/carmaker_rsds_client/share/colcon-core/packages/carmaker_rsds_client)
+[1.025s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mdxfsai/FS_autonomous/ros/ros2_ws/build/hellocm_cmnode' returned '0': AMENT_PREFIX_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs/lib:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/lib:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils/lib:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs/local/lib/python3.10/dist-packages:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/local/lib/python3.10/dist-packages:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils/local/lib/python3.10/dist-packages:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mdxfsai/FS_autonomous/ros/ros2_ws/build/hellocm_cmnode -- -j20 -l20
+[1.026s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mdxfsai/FS_autonomous/ros/ros2_ws/build/hellocm_cmnode': AMENT_PREFIX_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs/lib:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/lib:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils/lib:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs/local/lib/python3.10/dist-packages:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/local/lib/python3.10/dist-packages:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils/local/lib/python3.10/dist-packages:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/mdxfsai/FS_autonomous/ros/ros2_ws/build/hellocm_cmnode
+[1.039s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hellocm_cmnode)
+[1.039s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode' for CMake module files
+[1.040s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mdxfsai/FS_autonomous/ros/ros2_ws/build/hellocm_cmnode' returned '0': AMENT_PREFIX_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs/lib:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/lib:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils/lib:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs/local/lib/python3.10/dist-packages:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/local/lib/python3.10/dist-packages:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils/local/lib/python3.10/dist-packages:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/mdxfsai/FS_autonomous/ros/ros2_ws/build/hellocm_cmnode
+[1.041s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode' for CMake config files
+[1.041s] Level 1:colcon.colcon_core.shell:create_environment_hook('hellocm_cmnode', 'cmake_prefix_path')
+[1.041s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode/share/hellocm_cmnode/hook/cmake_prefix_path.ps1'
+[1.042s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode/share/hellocm_cmnode/hook/cmake_prefix_path.dsv'
+[1.042s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode/share/hellocm_cmnode/hook/cmake_prefix_path.sh'
+[1.043s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode/lib'
+[1.043s] Level 1:colcon.colcon_core.shell:create_environment_hook('hellocm_cmnode', 'ld_library_path_lib')
+[1.043s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode/share/hellocm_cmnode/hook/ld_library_path_lib.ps1'
+[1.044s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode/share/hellocm_cmnode/hook/ld_library_path_lib.dsv'
+[1.044s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode/share/hellocm_cmnode/hook/ld_library_path_lib.sh'
+[1.044s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode/bin'
+[1.044s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode/lib/pkgconfig/hellocm_cmnode.pc'
+[1.045s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode/lib/python3.10/site-packages'
+[1.045s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode/bin'
+[1.045s] INFO:colcon.colcon_core.shell:Creating package script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode/share/hellocm_cmnode/package.ps1'
+[1.046s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode/share/hellocm_cmnode/package.dsv'
+[1.046s] INFO:colcon.colcon_core.shell:Creating package script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode/share/hellocm_cmnode/package.sh'
+[1.046s] INFO:colcon.colcon_core.shell:Creating package script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode/share/hellocm_cmnode/package.bash'
+[1.047s] INFO:colcon.colcon_core.shell:Creating package script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode/share/hellocm_cmnode/package.zsh'
+[1.047s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode/share/colcon-core/packages/hellocm_cmnode)
+[1.047s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hellocm_cmnode)
+[1.048s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode' for CMake module files
+[1.048s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode' for CMake config files
+[1.048s] Level 1:colcon.colcon_core.shell:create_environment_hook('hellocm_cmnode', 'cmake_prefix_path')
+[1.048s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode/share/hellocm_cmnode/hook/cmake_prefix_path.ps1'
+[1.049s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode/share/hellocm_cmnode/hook/cmake_prefix_path.dsv'
+[1.049s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode/share/hellocm_cmnode/hook/cmake_prefix_path.sh'
+[1.050s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode/lib'
+[1.050s] Level 1:colcon.colcon_core.shell:create_environment_hook('hellocm_cmnode', 'ld_library_path_lib')
+[1.050s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode/share/hellocm_cmnode/hook/ld_library_path_lib.ps1'
+[1.050s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode/share/hellocm_cmnode/hook/ld_library_path_lib.dsv'
+[1.051s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode/share/hellocm_cmnode/hook/ld_library_path_lib.sh'
+[1.051s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode/bin'
+[1.051s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode/lib/pkgconfig/hellocm_cmnode.pc'
+[1.051s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode/lib/python3.10/site-packages'
+[1.052s] Level 1:colcon.colcon_core.environment:checking '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode/bin'
+[1.052s] INFO:colcon.colcon_core.shell:Creating package script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode/share/hellocm_cmnode/package.ps1'
+[1.053s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode/share/hellocm_cmnode/package.dsv'
+[1.053s] INFO:colcon.colcon_core.shell:Creating package script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode/share/hellocm_cmnode/package.sh'
+[1.054s] INFO:colcon.colcon_core.shell:Creating package script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode/share/hellocm_cmnode/package.bash'
+[1.054s] INFO:colcon.colcon_core.shell:Creating package script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode/share/hellocm_cmnode/package.zsh'
+[1.055s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode/share/colcon-core/packages/hellocm_cmnode)
+[1.056s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.056s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.056s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.056s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.062s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.063s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.063s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.074s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.075s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/local_setup.ps1'
+[1.076s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/_local_setup_util_ps1.py'
+[1.077s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/setup.ps1'
+[1.078s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/local_setup.sh'
+[1.078s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/_local_setup_util_sh.py'
+[1.079s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/setup.sh'
+[1.080s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/local_setup.bash'
+[1.080s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/setup.bash'
+[1.081s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/local_setup.zsh'
+[1.081s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/setup.zsh'

@@ -1,0 +1,11 @@
+setup.py
+hellocm_msgs/__init__.py
+hellocm_msgs.egg-info/PKG-INFO
+hellocm_msgs.egg-info/SOURCES.txt
+hellocm_msgs.egg-info/dependency_links.txt
+hellocm_msgs.egg-info/top_level.txt
+hellocm_msgs/msg/__init__.py
+hellocm_msgs/msg/_cm2_ext.py
+hellocm_msgs/msg/_ext2_cm.py
+hellocm_msgs/srv/__init__.py
+hellocm_msgs/srv/_init.py

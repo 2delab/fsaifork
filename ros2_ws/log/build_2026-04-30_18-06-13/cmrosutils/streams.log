@@ -1,0 +1,19 @@
+[0.010s] Invoking command in '/home/bashesam33/FS-AI/ros2_ws/build/cmrosutils': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/bashesam33/FS-AI/ros2_ws/src/cmrosutils -DCMAKE_INSTALL_PREFIX=/home/bashesam33/FS-AI/ros2_ws/install/cmrosutils
+[0.055s] -- The C compiler identification is GNU 13.3.0
+[0.114s] -- The CXX compiler identification is GNU 13.3.0
+[0.129s] -- Detecting C compiler ABI info
+[0.197s] -- Detecting C compiler ABI info - done
+[0.208s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.208s] -- Detecting C compile features
+[0.208s] -- Detecting C compile features - done
+[0.215s] -- Detecting CXX compiler ABI info
+[0.286s] -- Detecting CXX compiler ABI info - done
+[0.296s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.296s] -- Detecting CXX compile features
+[0.296s] -- Detecting CXX compile features - done
+[0.297s] CMake Error at CMakeLists.txt:43 (message):
+[0.297s]   Please set desired CarMaker Version in $CARMAKER_VER
+[0.297s] 
+[0.297s] 
+[0.297s] -- Configuring incomplete, errors occurred!
+[0.298s] Invoked command in '/home/bashesam33/FS-AI/ros2_ws/build/cmrosutils' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/bashesam33/FS-AI/ros2_ws/src/cmrosutils -DCMAKE_INSTALL_PREFIX=/home/bashesam33/FS-AI/ros2_ws/install/cmrosutils

@@ -1,0 +1,24 @@
+[0.011s] Invoking command in '/home/mdxfsai/FS_autonomous/ros/ros2_ws/build/hellocm': AMENT_PREFIX_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mdxfsai/FS_autonomous/ros/ros2_ws/build/hellocm -- -j20 -l20
+[0.077s] [100%] Built target hellocm
+[0.089s] Invoked command in '/home/mdxfsai/FS_autonomous/ros/ros2_ws/build/hellocm' returned '0': AMENT_PREFIX_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mdxfsai/FS_autonomous/ros/ros2_ws/build/hellocm -- -j20 -l20
+[0.092s] Invoking command in '/home/mdxfsai/FS_autonomous/ros/ros2_ws/build/hellocm': AMENT_PREFIX_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/mdxfsai/FS_autonomous/ros/ros2_ws/build/hellocm
+[0.101s] -- Install configuration: ""
+[0.102s] -- Up-to-date: /home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm/lib/hellocm/hellocm
+[0.102s] -- Up-to-date: /home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm/share/hellocm//launch
+[0.102s] -- Installing: /home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm/share/hellocm//launch/hellocm.launch.py
+[0.102s] -- Up-to-date: /home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm/share/ament_index/resource_index/package_run_dependencies/hellocm
+[0.102s] -- Up-to-date: /home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm/share/ament_index/resource_index/parent_prefix_path/hellocm
+[0.102s] -- Up-to-date: /home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm/share/hellocm/environment/ament_prefix_path.sh
+[0.103s] -- Up-to-date: /home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm/share/hellocm/environment/ament_prefix_path.dsv
+[0.103s] -- Up-to-date: /home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm/share/hellocm/environment/path.sh
+[0.103s] -- Up-to-date: /home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm/share/hellocm/environment/path.dsv
+[0.103s] -- Up-to-date: /home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm/share/hellocm/local_setup.bash
+[0.103s] -- Up-to-date: /home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm/share/hellocm/local_setup.sh
+[0.103s] -- Up-to-date: /home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm/share/hellocm/local_setup.zsh
+[0.103s] -- Up-to-date: /home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm/share/hellocm/local_setup.dsv
+[0.103s] -- Installing: /home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm/share/hellocm/package.dsv
+[0.103s] -- Up-to-date: /home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm/share/ament_index/resource_index/packages/hellocm
+[0.103s] -- Up-to-date: /home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm/share/hellocm/cmake/hellocmConfig.cmake
+[0.103s] -- Up-to-date: /home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm/share/hellocm/cmake/hellocmConfig-version.cmake
+[0.103s] -- Up-to-date: /home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm/share/hellocm/package.xml
+[0.123s] Invoked command in '/home/mdxfsai/FS_autonomous/ros/ros2_ws/build/hellocm' returned '0': AMENT_PREFIX_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/mdxfsai/FS_autonomous/ros/ros2_ws/build/hellocm

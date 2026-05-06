@@ -1,0 +1,4 @@
+source;share/vehiclecontrol_msgs/local_setup.bash
+source;share/vehiclecontrol_msgs/local_setup.dsv
+source;share/vehiclecontrol_msgs/local_setup.sh
+source;share/vehiclecontrol_msgs/local_setup.zsh

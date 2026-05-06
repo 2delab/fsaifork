@@ -1,0 +1,4 @@
+source;share/hellocm_cmnode/local_setup.bash
+source;share/hellocm_cmnode/local_setup.dsv
+source;share/hellocm_cmnode/local_setup.sh
+source;share/hellocm_cmnode/local_setup.zsh

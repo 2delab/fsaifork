@@ -1,0 +1,2 @@
+source;share/carmaker_rsds_client/environment/ament_prefix_path.sh
+source;share/carmaker_rsds_client/environment/path.sh

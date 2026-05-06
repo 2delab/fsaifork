@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from camera_msgs/msg/CameraDetectionArray.msg
+// generated code does not contain a copyright notice
+
+#include "camera_msgs/msg/CameraDetection.idl"
+
+module camera_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "~~~~~~~~~~ Custom ROS message for Camera HiFi Sensor Object List (array of detections) ~~~~~~~~~~")
+    struct CameraDetectionArray {
+      sequence<camera_msgs::msg::CameraDetection> detections;
+    };
+  };
+};

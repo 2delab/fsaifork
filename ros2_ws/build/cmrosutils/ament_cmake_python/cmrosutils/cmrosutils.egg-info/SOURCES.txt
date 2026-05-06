@@ -1,0 +1,8 @@
+setup.py
+cmrosutils/__init__.py
+cmrosutils.egg-info/PKG-INFO
+cmrosutils.egg-info/SOURCES.txt
+cmrosutils.egg-info/dependency_links.txt
+cmrosutils.egg-info/top_level.txt
+cmrosutils/srv/__init__.py
+cmrosutils/srv/_cm_remote_control.py

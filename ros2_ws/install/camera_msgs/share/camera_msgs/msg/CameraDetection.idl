@@ -1,0 +1,77 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from camera_msgs/msg/CameraDetection.msg
+// generated code does not contain a copyright notice
+
+
+module camera_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "~~~~~~~~~~ Custom ROS message for HiFi Camera Sensor ~~~~~~~~~~")
+    struct CameraDetection {
+      @verbatim (language="comment", text=
+        "~~~~~ Quantities match UAQs for HiFi Camera Sensor in CM" "\n"
+        "~~~~~ See 'Reference Manual --> User Accessible Quantities --> Sensors --> Camera Sensor' for full descriptions." "\n"
+        " global ID to identify object (integer)")
+      int32 objid;
+
+      @verbatim (language="comment", text=
+        "camera object type (integer)" "\n"
+        "  0 - Car" "\n"
+        "  1 - Truck" "\n"
+        "  2 - Bicycle" "\n"
+        "  3 - Pedestrian" "\n"
+        "  4 - Traffic sign" "\n"
+        "  5 - Traffic light")
+      int8 objecttype;
+
+      @verbatim (language="comment", text=
+        "number of visible pixels (integer)")
+      int64 nvispixels;
+
+      @verbatim (language="comment", text=
+        "indicates how much of the object is visible")
+      double confidence;
+
+      @verbatim (language="comment", text=
+        "minimum bounding rectangle - bottom left and top right points")
+      double mbr_bl_x;
+
+      double mbr_bl_y;
+
+      double mbr_bl_z;
+
+      double mbr_tr_x;
+
+      double mbr_tr_y;
+
+      double mbr_tr_z;
+
+      @verbatim (language="comment", text=
+        "0: not facing sensor, 1: facing sensor")
+      int8 facing;
+
+      @verbatim (language="comment", text=
+        "Traffic light state/phase (integer):" "\n"
+        "  0: All lights off" "\n"
+        "  1: Green light on" "\n"
+        "  2: Yellow light on" "\n"
+        "  3: Red light on" "\n"
+        "  4: Red-Yellow light on")
+      int8 lightstate;
+
+      @verbatim (language="comment", text=
+        "User defined sign attribute values")
+      double signmain_val0;
+
+      double signmain_val1;
+
+      double signsuppl1_val0;
+
+      double signsuppl1_val1;
+
+      double signsuppl2_val0;
+
+      double signsuppl2_val1;
+    };
+  };
+};

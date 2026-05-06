@@ -1,0 +1,6 @@
+{
+  "package_name": "vehiclecontrol_msgs",
+  "non_idl_tuples": [
+    "/home/bashesam33/FS-AI/ros2_ws/src/vehiclecontrol_msgs:msg/VehicleControl.msg"
+  ]
+}

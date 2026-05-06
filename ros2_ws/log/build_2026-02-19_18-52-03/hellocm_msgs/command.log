@@ -1,0 +1,4 @@
+Invoking command in '/home/mdxfsai/FS_autonomous/ros/ros2_ws/build/hellocm_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mdxfsai/FS_autonomous/ros/ros2_ws/build/hellocm_msgs -- -j20 -l20
+Invoked command in '/home/mdxfsai/FS_autonomous/ros/ros2_ws/build/hellocm_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mdxfsai/FS_autonomous/ros/ros2_ws/build/hellocm_msgs -- -j20 -l20
+Invoking command in '/home/mdxfsai/FS_autonomous/ros/ros2_ws/build/hellocm_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mdxfsai/FS_autonomous/ros/ros2_ws/build/hellocm_msgs
+Invoked command in '/home/mdxfsai/FS_autonomous/ros/ros2_ws/build/hellocm_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mdxfsai/FS_autonomous/ros/ros2_ws/build/hellocm_msgs

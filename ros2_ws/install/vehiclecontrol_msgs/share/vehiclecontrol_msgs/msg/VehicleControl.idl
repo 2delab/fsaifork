@@ -1,0 +1,68 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from vehiclecontrol_msgs/msg/VehicleControl.msg
+// generated code does not contain a copyright notice
+
+
+module vehiclecontrol_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "---------- ROS Message to map external signals to CarMaker Vehicle Control Quantities ---------- " "\n"
+      "*** Most of VC Interface outlined here...uncomment relevant quantities and assign in CMNode as demonstrated. ***")
+    struct VehicleControl {
+      @verbatim (language="comment", text=
+        "----- Flag to Use VC Input -----" "\n"
+        " Set this flag to 1 in order to start writing to CarMaker VC quantities in this message." "\n"
+        "   --> Used so that zeros are not sent over topic when no node is publishing to steer, brake, gas, etc." "\n"
+        "   --> Allows driver or DiL to drive the vehicle via DM quantities and not be overwritten by VC if not needed." "\n"
+        "   0: Key out" "\n"
+        "   1: Key in, power off" "\n"
+        "   2: Key in, power accessory" "\n"
+        "   3: Key in, power on" "\n"
+        "   4: Key in, starter active" "\n"
+        "   0=off" "\n"
+        "   1=on")
+      boolean use_vc;
+
+      @verbatim (language="comment", text=
+        "----- Key / StartStop Button -----" "\n"
+        "int8 key                # Vehicle key position (integer):" "\n"
+        "bool sst                # Powertrain start-stop button (boolean):" "\n"
+        "----- Transmission -----" "\n"
+        " PRNDL Position" "\n"
+        "   -9 = Park" "\n"
+        "   -1 = Reverse" "\n"
+        "    0 = Neutral" "\n"
+        "    1 = Drive" "\n"
+        "    2 = Manual gear selection (requires Manumatic transmission in CM model)")
+      int8 selector_ctrl;
+
+      @verbatim (language="comment", text=
+        "int8 gear               # Gear number for manual transmission...uncomment for use with manual transmission model." "\n"
+        "----- Pedals -----" "\n"
+        " Gas pedal position")
+      @unit (value="0 - 1")
+      double gas;
+
+      @verbatim (language="comment", text=
+        "Brake pedal position")
+      @unit (value="0 - 1")
+      double brake;
+
+      @verbatim (language="comment", text=
+        "float64 clutch         # Clutch pedal position [0 - 1]...uncomment for use with manual transmission model." "\n"
+        "----- Steering -----" "\n"
+        " Steer angle [rad]")
+      double steer_ang;
+
+      @verbatim (language="comment", text=
+        "Steer angle velocity")
+      @unit (value="rad/s")
+      double steer_ang_vel;
+
+      @verbatim (language="comment", text=
+        "Steer angle acceleration")
+      @unit (value="rad/s^2")
+      double steer_ang_acc;
+    };
+  };
+};

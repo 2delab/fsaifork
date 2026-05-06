@@ -1,0 +1,124 @@
+[0.020s] Invoking command in '/home/mdxfsai/FS_autonomous/ros/ros2_ws/build/hellocm_cmnode': AMENT_PREFIX_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs/lib:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/lib:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils/lib:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs/local/lib/python3.10/dist-packages:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/local/lib/python3.10/dist-packages:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils/local/lib/python3.10/dist-packages:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mdxfsai/FS_autonomous/ros/ros2_ws/build/hellocm_cmnode -- -j20 -l20
+[0.079s] [ 50%] Building CXX object CMakeFiles/CMNode_ROS2_HelloCM.dir/src/CMNode_ROS2_HelloCM.cpp.o
+[6.245s] /home/mdxfsai/FS_autonomous/ros/ros2_ws/src/hellocm_cmnode/src/CMNode_ROS2_HelloCM.cpp: In member function ‘virtual int cm_ros::CMNodeHelloCM::userTestrunStartAtBegin()’:
+[6.246s] /home/mdxfsai/FS_autonomous/ros/ros2_ws/src/hellocm_cmnode/src/CMNode_ROS2_HelloCM.cpp:820:25: warning: ‘%f’ directive writing between 3 and 317 bytes into a region of size between 3 and 73 [-Wformat-overflow=]
+[6.246s]   820 |           sprintf(sbuf, "ros2 launch carmaker_rsds_client carmaker_rsds_client.launch.py \
+[6.246s]       |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[6.246s]   821 |             camera_no:=%d \
+[6.246s]       |             ~~~~~~~~~~~~~~~
+[6.246s]   822 |             camera_name:=%s \
+[6.246s]       |             ~~~~~~~~~~~~~~~~~
+[6.246s]   823 |             rsds_port:=%d \
+[6.246s]       |             ~~~~~~~~~~~~~~~
+[6.246s]   824 |             param_trans_rot:=[%f,%f,%f,%f,%f,%f] \
+[6.246s]       |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[6.246s]   825 |             fov_deg:=%f \
+[6.246s]       |             ~~~~~~~~~~~~~
+[6.246s]   826 |             width:=%f \
+[6.246s]       |             ~~~~~~~~~~~  
+[6.246s]   827 |             height:=%f \
+[6.246s]       |             ~~~~~~~~~~~~ 
+[6.246s]   828 |             secondary_channel:=%d \
+[6.246s]       |             ~~~~~~~~~~~~~~~~~~~~~~~
+[6.246s]   829 |             secondary_camera_name:=%s \
+[6.246s]       |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[6.247s]   830 |             secondary_camera_frame:=CARS00 \
+[6.247s]       |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[6.247s]   831 |             secondary_param_trans_rot:=[%f,%f,%f,%f,%f,%f] \
+[6.247s]       |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[6.247s]   832 |             secondary_fov_deg:=%f \
+[6.247s]       |             ~~~~~~~~~~~~~~~~~~~~~~~
+[6.247s]   833 |             secondary_width:=%f \
+[6.247s]       |             ~~~~~~~~~~~~~~~~~~~~~
+[6.247s]   834 |             secondary_height:=%f &",
+[6.247s]       |             ~~~~~~~~~~~~~~~~~~~~~~~
+[6.247s] /home/mdxfsai/FS_autonomous/ros/ros2_ws/src/hellocm_cmnode/src/CMNode_ROS2_HelloCM.cpp:820:25: note: assuming directive output of 8 bytes
+[6.247s] /home/mdxfsai/FS_autonomous/ros/ros2_ws/src/hellocm_cmnode/src/CMNode_ROS2_HelloCM.cpp:820:25: note: assuming directive output of 8 bytes
+[6.247s] /home/mdxfsai/FS_autonomous/ros/ros2_ws/src/hellocm_cmnode/src/CMNode_ROS2_HelloCM.cpp:820:25: note: assuming directive output of 8 bytes
+[6.247s] /home/mdxfsai/FS_autonomous/ros/ros2_ws/src/hellocm_cmnode/src/CMNode_ROS2_HelloCM.cpp:820:25: note: assuming directive output of 8 bytes
+[6.247s] /home/mdxfsai/FS_autonomous/ros/ros2_ws/src/hellocm_cmnode/src/CMNode_ROS2_HelloCM.cpp:820:18: note: ‘sprintf’ output 548 or more bytes (assuming 638) into a destination of size 512
+[6.247s]   820 |           sprintf(sbuf, "ros2 launch carmaker_rsds_client carmaker_rsds_client.launch.py \
+[6.247s]       |           ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[6.247s]   821 |             camera_no:=%d \
+[6.247s]       |             ~~~~~~~~~~~~~~~
+[6.247s]   822 |             camera_name:=%s \
+[6.247s]       |             ~~~~~~~~~~~~~~~~~
+[6.247s]   823 |             rsds_port:=%d \
+[6.247s]       |             ~~~~~~~~~~~~~~~
+[6.247s]   824 |             param_trans_rot:=[%f,%f,%f,%f,%f,%f] \
+[6.248s]       |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[6.248s]   825 |             fov_deg:=%f \
+[6.248s]       |             ~~~~~~~~~~~~~
+[6.248s]   826 |             width:=%f \
+[6.248s]       |             ~~~~~~~~~~~
+[6.248s]   827 |             height:=%f \
+[6.248s]       |             ~~~~~~~~~~~~
+[6.248s]   828 |             secondary_channel:=%d \
+[6.248s]       |             ~~~~~~~~~~~~~~~~~~~~~~~
+[6.248s]   829 |             secondary_camera_name:=%s \
+[6.248s]       |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[6.248s]   830 |             secondary_camera_frame:=CARS00 \
+[6.248s]       |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[6.248s]   831 |             secondary_param_trans_rot:=[%f,%f,%f,%f,%f,%f] \
+[6.248s]       |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[6.248s]   832 |             secondary_fov_deg:=%f \
+[6.248s]       |             ~~~~~~~~~~~~~~~~~~~~~~~
+[6.248s]   833 |             secondary_width:=%f \
+[6.248s]       |             ~~~~~~~~~~~~~~~~~~~~~
+[6.248s]   834 |             secondary_height:=%f &",
+[6.248s]       |             ~~~~~~~~~~~~~~~~~~~~~~~~
+[6.248s]   835 |             primary.number,
+[6.248s]       |             ~~~~~~~~~~~~~~~
+[6.248s]   836 |             primary.name,
+[6.248s]       |             ~~~~~~~~~~~~~
+[6.249s]   837 |             primary.Socket,
+[6.249s]       |             ~~~~~~~~~~~~~~~
+[6.249s]   838 |             primary.pos[0],primary.pos[1],primary.pos[2],primary.rot[0],primary.rot[1],primary.rot[2],
+[6.249s]       |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[6.249s]   839 |             primary.FoV,
+[6.249s]       |             ~~~~~~~~~~~~
+[6.249s]   840 |             primary.Resolution[0],
+[6.249s]       |             ~~~~~~~~~~~~~~~~~~~~~~
+[6.249s]   841 |             primary.Resolution[1],
+[6.249s]       |             ~~~~~~~~~~~~~~~~~~~~~~
+[6.249s]   842 |             secondary.number,
+[6.249s]       |             ~~~~~~~~~~~~~~~~~
+[6.249s]   843 |             secondary.name,
+[6.249s]       |             ~~~~~~~~~~~~~~~
+[6.249s]   844 |             secondary.pos[0],secondary.pos[1],secondary.pos[2],secondary.rot[0],secondary.rot[1],secondary.rot[2],
+[6.249s]       |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[6.249s]   845 |             secondary.FoV,
+[6.249s]       |             ~~~~~~~~~~~~~~
+[6.249s]   846 |             secondary.Resolution[0],
+[6.249s]       |             ~~~~~~~~~~~~~~~~~~~~~~~~
+[6.249s]   847 |             secondary.Resolution[1]);
+[6.249s]       |             ~~~~~~~~~~~~~~~~~~~~~~~~
+[14.116s] [100%] Linking CXX shared library libCMNode_ROS2_HelloCM.so
+[15.034s] [100%] Built target CMNode_ROS2_HelloCM
+[15.046s] Invoked command in '/home/mdxfsai/FS_autonomous/ros/ros2_ws/build/hellocm_cmnode' returned '0': AMENT_PREFIX_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs/lib:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/lib:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils/lib:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs/local/lib/python3.10/dist-packages:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/local/lib/python3.10/dist-packages:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils/local/lib/python3.10/dist-packages:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mdxfsai/FS_autonomous/ros/ros2_ws/build/hellocm_cmnode -- -j20 -l20
+[15.047s] Invoking command in '/home/mdxfsai/FS_autonomous/ros/ros2_ws/build/hellocm_cmnode': AMENT_PREFIX_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs/lib:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/lib:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils/lib:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs/local/lib/python3.10/dist-packages:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/local/lib/python3.10/dist-packages:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils/local/lib/python3.10/dist-packages:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/mdxfsai/FS_autonomous/ros/ros2_ws/build/hellocm_cmnode
+[15.057s] -- Install configuration: ""
+[15.057s] -- Installing: /home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode/lib/libCMNode_ROS2_HelloCM.so
+[15.067s] -- Set runtime path of "/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode/lib/libCMNode_ROS2_HelloCM.so" to ""
+[15.067s] -- Up-to-date: /home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode/share/hellocm_cmnode//launch
+[15.067s] -- Up-to-date: /home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode/share/hellocm_cmnode//launch/ads-dv_rviz2.launch.py
+[15.067s] -- Up-to-date: /home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode/share/hellocm_cmnode//launch/ads-dv_rviz2.rviz
+[15.067s] -- Up-to-date: /home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode/share/hellocm_cmnode/environment/library_path.sh
+[15.067s] -- Up-to-date: /home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode/share/hellocm_cmnode/environment/library_path.dsv
+[15.067s] -- Up-to-date: /home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode/share/ament_index/resource_index/package_run_dependencies/hellocm_cmnode
+[15.068s] -- Up-to-date: /home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode/share/ament_index/resource_index/parent_prefix_path/hellocm_cmnode
+[15.068s] -- Up-to-date: /home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode/share/hellocm_cmnode/environment/ament_prefix_path.sh
+[15.068s] -- Up-to-date: /home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode/share/hellocm_cmnode/environment/ament_prefix_path.dsv
+[15.068s] -- Up-to-date: /home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode/share/hellocm_cmnode/environment/path.sh
+[15.068s] -- Up-to-date: /home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode/share/hellocm_cmnode/environment/path.dsv
+[15.068s] -- Up-to-date: /home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode/share/hellocm_cmnode/local_setup.bash
+[15.068s] -- Up-to-date: /home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode/share/hellocm_cmnode/local_setup.sh
+[15.068s] -- Up-to-date: /home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode/share/hellocm_cmnode/local_setup.zsh
+[15.068s] -- Up-to-date: /home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode/share/hellocm_cmnode/local_setup.dsv
+[15.068s] -- Installing: /home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode/share/hellocm_cmnode/package.dsv
+[15.068s] -- Up-to-date: /home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode/share/ament_index/resource_index/packages/hellocm_cmnode
+[15.068s] -- Up-to-date: /home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode/share/hellocm_cmnode/cmake/ament_cmake_export_libraries-extras.cmake
+[15.068s] -- Up-to-date: /home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode/share/hellocm_cmnode/cmake/hellocm_cmnodeConfig.cmake
+[15.069s] -- Up-to-date: /home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode/share/hellocm_cmnode/cmake/hellocm_cmnodeConfig-version.cmake
+[15.069s] -- Up-to-date: /home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_cmnode/share/hellocm_cmnode/package.xml
+[15.069s] Invoked command in '/home/mdxfsai/FS_autonomous/ros/ros2_ws/build/hellocm_cmnode' returned '0': AMENT_PREFIX_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs/lib:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/lib:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils/lib:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/vehiclecontrol_msgs/local/lib/python3.10/dist-packages:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/hellocm_msgs/local/lib/python3.10/dist-packages:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/cmrosutils/local/lib/python3.10/dist-packages:/home/mdxfsai/FS_autonomous/ros/ros2_ws/install/camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/mdxfsai/FS_autonomous/ros/ros2_ws/build/hellocm_cmnode

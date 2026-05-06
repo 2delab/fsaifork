@@ -1,0 +1,14 @@
+{
+  "package_name": "hellocm_msgs",
+  "output_dir": "/home/bashesam33/FS-AI/ros2_ws/build/hellocm_msgs/rosidl_generator_type_description/hellocm_msgs",
+  "idl_tuples": [
+    "/home/bashesam33/FS-AI/ros2_ws/build/hellocm_msgs/rosidl_adapter/hellocm_msgs:msg/CM2Ext.idl",
+    "/home/bashesam33/FS-AI/ros2_ws/build/hellocm_msgs/rosidl_adapter/hellocm_msgs:msg/Ext2CM.idl",
+    "/home/bashesam33/FS-AI/ros2_ws/build/hellocm_msgs/rosidl_adapter/hellocm_msgs:srv/Init.idl"
+  ],
+  "include_paths": [
+    "std_msgs:/opt/ros/jazzy/share/std_msgs",
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces",
+    "service_msgs:/opt/ros/jazzy/share/service_msgs"
+  ]
+}

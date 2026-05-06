@@ -1,0 +1,8 @@
+{
+  "package_name": "hellocm_msgs",
+  "non_idl_tuples": [
+    "/home/bashesam33/FS-AI/ros2_ws/src/hellocm_msgs:msg/CM2Ext.msg",
+    "/home/bashesam33/FS-AI/ros2_ws/src/hellocm_msgs:msg/Ext2CM.msg",
+    "/home/bashesam33/FS-AI/ros2_ws/src/hellocm_msgs:srv/Init.srv"
+  ]
+}

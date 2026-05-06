@@ -1,0 +1,173 @@
+[0.000000] (-) TimerEvent: {}
+[0.000156] (camera_msgs) JobQueued: {'identifier': 'camera_msgs', 'dependencies': OrderedDict()}
+[0.000493] (cmrosutils) JobQueued: {'identifier': 'cmrosutils', 'dependencies': OrderedDict()}
+[0.000574] (hellocm_msgs) JobQueued: {'identifier': 'hellocm_msgs', 'dependencies': OrderedDict()}
+[0.000599] (vehiclecontrol_msgs) JobQueued: {'identifier': 'vehiclecontrol_msgs', 'dependencies': OrderedDict()}
+[0.000635] (carmaker_rsds_client) JobQueued: {'identifier': 'carmaker_rsds_client', 'dependencies': OrderedDict({'camera_msgs': '/home/bashesam33/FS-AI/ros2_ws/install/camera_msgs', 'cmrosutils': '/home/bashesam33/FS-AI/ros2_ws/install/cmrosutils'})}
+[0.000664] (hellocm) JobQueued: {'identifier': 'hellocm', 'dependencies': OrderedDict({'hellocm_msgs': '/home/bashesam33/FS-AI/ros2_ws/install/hellocm_msgs'})}
+[0.000826] (hellocm_cmnode) JobQueued: {'identifier': 'hellocm_cmnode', 'dependencies': OrderedDict({'camera_msgs': '/home/bashesam33/FS-AI/ros2_ws/install/camera_msgs', 'cmrosutils': '/home/bashesam33/FS-AI/ros2_ws/install/cmrosutils', 'hellocm_msgs': '/home/bashesam33/FS-AI/ros2_ws/install/hellocm_msgs', 'vehiclecontrol_msgs': '/home/bashesam33/FS-AI/ros2_ws/install/vehiclecontrol_msgs'})}
+[0.000864] (camera_msgs) JobStarted: {'identifier': 'camera_msgs'}
+[0.004364] (cmrosutils) JobStarted: {'identifier': 'cmrosutils'}
+[0.006152] (hellocm_msgs) JobStarted: {'identifier': 'hellocm_msgs'}
+[0.008843] (vehiclecontrol_msgs) JobStarted: {'identifier': 'vehiclecontrol_msgs'}
+[0.011590] (camera_msgs) JobProgress: {'identifier': 'camera_msgs', 'progress': 'cmake'}
+[0.011847] (camera_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/bashesam33/FS-AI/ros2_ws/src/camera_msgs', '-DCMAKE_INSTALL_PREFIX=/home/bashesam33/FS-AI/ros2_ws/install/camera_msgs'], 'cwd': '/home/bashesam33/FS-AI/ros2_ws/build/camera_msgs', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_CWD': '/home/bashesam33', 'VSCODE_ESM_ENTRYPOINT': 'vs/workbench/api/node/extensionHostProcess', 'CODEX_CI': '1', 'USER': 'bashesam33', 'CODEX_INTERNAL_ORIGINATOR_OVERRIDE': 'codex_vscode', 'VSCODE_NLS_CONFIG': '{"userLocale":"en-us","osLocale":"en-us","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","locale":"en-us","availableLanguages":{}}', 'VSCODE_HANDLES_UNCAUGHT_ERRORS': 'true', 'XDG_SESSION_TYPE': 'wayland', 'DEBUG': 'release', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/bashesam33', 'CHROME_DESKTOP': 'code.desktop', 'DESKTOP_SESSION': 'ubuntu-wayland', 'VSCODE_IPC_HOOK': '/run/user/1000/vscode-a6d87aea-1.11-main.sock', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'PAGER': 'cat', 'MANAGERPID': '2234', 'LC_CTYPE': 'C.UTF-8', 'SYSTEMD_EXEC_PID': '2464', 'IM_CONFIG_CHECK_ENV': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'NO_COLOR': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': '', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '4409', 'VSCODE_CRASH_REPORTER_PROCESS_TYPE': 'extensionHost', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'bashesam33', 'JOURNAL_STREAM': '9:16363', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'RUST_LOG': 'warn', 'USERNAME': 'bashesam33', 'TERM': 'dumb', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'PATH': '/home/bashesam33/.codex/tmp/arg0/codex-arg0zOhGhB:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/bashesam33/.vscode/extensions/openai.chatgpt-26.422.71525-linux-x64/bin/linux-x86_64', 'SESSION_MANAGER': 'local/samuels-laptop:@/tmp/.ICE-unix/2433,unix/samuels-laptop:/tmp/.ICE-unix/2433', 'INVOCATION_ID': '7f4fdb53f71e48ad8eb15f24d8c7139f', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':2', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'wayland', 'DISPLAY': ':1', 'CODEX_SANDBOX_NETWORK_DISABLED': '1', 'LANG': 'C.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'RMW_IMPLEMENTATION': 'rmw_fastrtps_cpp', 'XMODIFIERS': '@im=ibus', 'GH_PAGER': 'cat', 'XDG_SESSION_DESKTOP': 'ubuntu-wayland', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.4QHNO3', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '42', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'ELECTRON_RUN_AS_NODE': '1', 'GDMSESSION': 'ubuntu-wayland', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CODEX_THREAD_ID': '019ddea0-55ea-7741-a054-79b1692ff5a9', 'GJS_DEBUG_OUTPUT': 'stderr', 'GIT_PAGER': 'cat', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/bashesam33/FS-AI/ros2_ws/build/camera_msgs', 'LC_ALL': 'C.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu-wayland:/etc/xdg', 'VSCODE_CODE_CACHE_PATH': '/home/bashesam33/.config/Code/CachedData/07ff9d6178ede9a1bd12ad3399074d726ebe6e43', 'XDG_DATA_DIRS': '/usr/share/ubuntu-wayland:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'VSCODE_PID': '4409'}), 'shell': False}
+[0.013097] (cmrosutils) JobProgress: {'identifier': 'cmrosutils', 'progress': 'cmake'}
+[0.013213] (cmrosutils) Command: {'cmd': ['/usr/bin/cmake', '/home/bashesam33/FS-AI/ros2_ws/src/cmrosutils', '-DCMAKE_INSTALL_PREFIX=/home/bashesam33/FS-AI/ros2_ws/install/cmrosutils'], 'cwd': '/home/bashesam33/FS-AI/ros2_ws/build/cmrosutils', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_CWD': '/home/bashesam33', 'VSCODE_ESM_ENTRYPOINT': 'vs/workbench/api/node/extensionHostProcess', 'CODEX_CI': '1', 'USER': 'bashesam33', 'CODEX_INTERNAL_ORIGINATOR_OVERRIDE': 'codex_vscode', 'VSCODE_NLS_CONFIG': '{"userLocale":"en-us","osLocale":"en-us","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","locale":"en-us","availableLanguages":{}}', 'VSCODE_HANDLES_UNCAUGHT_ERRORS': 'true', 'XDG_SESSION_TYPE': 'wayland', 'DEBUG': 'release', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/bashesam33', 'CHROME_DESKTOP': 'code.desktop', 'DESKTOP_SESSION': 'ubuntu-wayland', 'VSCODE_IPC_HOOK': '/run/user/1000/vscode-a6d87aea-1.11-main.sock', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'PAGER': 'cat', 'MANAGERPID': '2234', 'LC_CTYPE': 'C.UTF-8', 'SYSTEMD_EXEC_PID': '2464', 'IM_CONFIG_CHECK_ENV': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'NO_COLOR': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': '', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '4409', 'VSCODE_CRASH_REPORTER_PROCESS_TYPE': 'extensionHost', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'bashesam33', 'JOURNAL_STREAM': '9:16363', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'RUST_LOG': 'warn', 'USERNAME': 'bashesam33', 'TERM': 'dumb', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'PATH': '/home/bashesam33/.codex/tmp/arg0/codex-arg0zOhGhB:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/bashesam33/.vscode/extensions/openai.chatgpt-26.422.71525-linux-x64/bin/linux-x86_64', 'SESSION_MANAGER': 'local/samuels-laptop:@/tmp/.ICE-unix/2433,unix/samuels-laptop:/tmp/.ICE-unix/2433', 'INVOCATION_ID': '7f4fdb53f71e48ad8eb15f24d8c7139f', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':2', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'wayland', 'DISPLAY': ':1', 'CODEX_SANDBOX_NETWORK_DISABLED': '1', 'LANG': 'C.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'RMW_IMPLEMENTATION': 'rmw_fastrtps_cpp', 'XMODIFIERS': '@im=ibus', 'GH_PAGER': 'cat', 'XDG_SESSION_DESKTOP': 'ubuntu-wayland', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.4QHNO3', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '42', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'ELECTRON_RUN_AS_NODE': '1', 'GDMSESSION': 'ubuntu-wayland', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CODEX_THREAD_ID': '019ddea0-55ea-7741-a054-79b1692ff5a9', 'GJS_DEBUG_OUTPUT': 'stderr', 'GIT_PAGER': 'cat', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/bashesam33/FS-AI/ros2_ws/build/cmrosutils', 'LC_ALL': 'C.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu-wayland:/etc/xdg', 'VSCODE_CODE_CACHE_PATH': '/home/bashesam33/.config/Code/CachedData/07ff9d6178ede9a1bd12ad3399074d726ebe6e43', 'XDG_DATA_DIRS': '/usr/share/ubuntu-wayland:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'VSCODE_PID': '4409'}), 'shell': False}
+[0.014424] (hellocm_msgs) JobProgress: {'identifier': 'hellocm_msgs', 'progress': 'cmake'}
+[0.014454] (hellocm_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/bashesam33/FS-AI/ros2_ws/src/hellocm_msgs', '-DCMAKE_INSTALL_PREFIX=/home/bashesam33/FS-AI/ros2_ws/install/hellocm_msgs'], 'cwd': '/home/bashesam33/FS-AI/ros2_ws/build/hellocm_msgs', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_CWD': '/home/bashesam33', 'VSCODE_ESM_ENTRYPOINT': 'vs/workbench/api/node/extensionHostProcess', 'CODEX_CI': '1', 'USER': 'bashesam33', 'CODEX_INTERNAL_ORIGINATOR_OVERRIDE': 'codex_vscode', 'VSCODE_NLS_CONFIG': '{"userLocale":"en-us","osLocale":"en-us","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","locale":"en-us","availableLanguages":{}}', 'VSCODE_HANDLES_UNCAUGHT_ERRORS': 'true', 'XDG_SESSION_TYPE': 'wayland', 'DEBUG': 'release', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/bashesam33', 'CHROME_DESKTOP': 'code.desktop', 'DESKTOP_SESSION': 'ubuntu-wayland', 'VSCODE_IPC_HOOK': '/run/user/1000/vscode-a6d87aea-1.11-main.sock', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'PAGER': 'cat', 'MANAGERPID': '2234', 'LC_CTYPE': 'C.UTF-8', 'SYSTEMD_EXEC_PID': '2464', 'IM_CONFIG_CHECK_ENV': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'NO_COLOR': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': '', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '4409', 'VSCODE_CRASH_REPORTER_PROCESS_TYPE': 'extensionHost', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'bashesam33', 'JOURNAL_STREAM': '9:16363', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'RUST_LOG': 'warn', 'USERNAME': 'bashesam33', 'TERM': 'dumb', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'PATH': '/home/bashesam33/.codex/tmp/arg0/codex-arg0zOhGhB:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/bashesam33/.vscode/extensions/openai.chatgpt-26.422.71525-linux-x64/bin/linux-x86_64', 'SESSION_MANAGER': 'local/samuels-laptop:@/tmp/.ICE-unix/2433,unix/samuels-laptop:/tmp/.ICE-unix/2433', 'INVOCATION_ID': '7f4fdb53f71e48ad8eb15f24d8c7139f', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':2', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'wayland', 'DISPLAY': ':1', 'CODEX_SANDBOX_NETWORK_DISABLED': '1', 'LANG': 'C.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'RMW_IMPLEMENTATION': 'rmw_fastrtps_cpp', 'XMODIFIERS': '@im=ibus', 'GH_PAGER': 'cat', 'XDG_SESSION_DESKTOP': 'ubuntu-wayland', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.4QHNO3', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '42', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'ELECTRON_RUN_AS_NODE': '1', 'GDMSESSION': 'ubuntu-wayland', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CODEX_THREAD_ID': '019ddea0-55ea-7741-a054-79b1692ff5a9', 'GJS_DEBUG_OUTPUT': 'stderr', 'GIT_PAGER': 'cat', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/bashesam33/FS-AI/ros2_ws/build/hellocm_msgs', 'LC_ALL': 'C.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu-wayland:/etc/xdg', 'VSCODE_CODE_CACHE_PATH': '/home/bashesam33/.config/Code/CachedData/07ff9d6178ede9a1bd12ad3399074d726ebe6e43', 'XDG_DATA_DIRS': '/usr/share/ubuntu-wayland:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'VSCODE_PID': '4409'}), 'shell': False}
+[0.015597] (vehiclecontrol_msgs) JobProgress: {'identifier': 'vehiclecontrol_msgs', 'progress': 'cmake'}
+[0.015716] (vehiclecontrol_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/bashesam33/FS-AI/ros2_ws/src/vehiclecontrol_msgs', '-DCMAKE_INSTALL_PREFIX=/home/bashesam33/FS-AI/ros2_ws/install/vehiclecontrol_msgs'], 'cwd': '/home/bashesam33/FS-AI/ros2_ws/build/vehiclecontrol_msgs', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_CWD': '/home/bashesam33', 'VSCODE_ESM_ENTRYPOINT': 'vs/workbench/api/node/extensionHostProcess', 'CODEX_CI': '1', 'USER': 'bashesam33', 'CODEX_INTERNAL_ORIGINATOR_OVERRIDE': 'codex_vscode', 'VSCODE_NLS_CONFIG': '{"userLocale":"en-us","osLocale":"en-us","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","locale":"en-us","availableLanguages":{}}', 'VSCODE_HANDLES_UNCAUGHT_ERRORS': 'true', 'XDG_SESSION_TYPE': 'wayland', 'DEBUG': 'release', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/bashesam33', 'CHROME_DESKTOP': 'code.desktop', 'DESKTOP_SESSION': 'ubuntu-wayland', 'VSCODE_IPC_HOOK': '/run/user/1000/vscode-a6d87aea-1.11-main.sock', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'PAGER': 'cat', 'MANAGERPID': '2234', 'LC_CTYPE': 'C.UTF-8', 'SYSTEMD_EXEC_PID': '2464', 'IM_CONFIG_CHECK_ENV': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'NO_COLOR': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': '', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '4409', 'VSCODE_CRASH_REPORTER_PROCESS_TYPE': 'extensionHost', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'bashesam33', 'JOURNAL_STREAM': '9:16363', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'RUST_LOG': 'warn', 'USERNAME': 'bashesam33', 'TERM': 'dumb', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'PATH': '/home/bashesam33/.codex/tmp/arg0/codex-arg0zOhGhB:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/bashesam33/.vscode/extensions/openai.chatgpt-26.422.71525-linux-x64/bin/linux-x86_64', 'SESSION_MANAGER': 'local/samuels-laptop:@/tmp/.ICE-unix/2433,unix/samuels-laptop:/tmp/.ICE-unix/2433', 'INVOCATION_ID': '7f4fdb53f71e48ad8eb15f24d8c7139f', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':2', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'wayland', 'DISPLAY': ':1', 'CODEX_SANDBOX_NETWORK_DISABLED': '1', 'LANG': 'C.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'RMW_IMPLEMENTATION': 'rmw_fastrtps_cpp', 'XMODIFIERS': '@im=ibus', 'GH_PAGER': 'cat', 'XDG_SESSION_DESKTOP': 'ubuntu-wayland', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.4QHNO3', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '42', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'ELECTRON_RUN_AS_NODE': '1', 'GDMSESSION': 'ubuntu-wayland', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CODEX_THREAD_ID': '019ddea0-55ea-7741-a054-79b1692ff5a9', 'GJS_DEBUG_OUTPUT': 'stderr', 'GIT_PAGER': 'cat', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/bashesam33/FS-AI/ros2_ws/build/vehiclecontrol_msgs', 'LC_ALL': 'C.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu-wayland:/etc/xdg', 'VSCODE_CODE_CACHE_PATH': '/home/bashesam33/.config/Code/CachedData/07ff9d6178ede9a1bd12ad3399074d726ebe6e43', 'XDG_DATA_DIRS': '/usr/share/ubuntu-wayland:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'VSCODE_PID': '4409'}), 'shell': False}
+[0.058809] (cmrosutils) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.059034] (hellocm_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.059285] (camera_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.066456] (vehiclecontrol_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.099865] (-) TimerEvent: {}
+[0.117201] (camera_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.118528] (cmrosutils) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.119393] (vehiclecontrol_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.122257] (hellocm_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.132543] (camera_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.132872] (cmrosutils) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.133020] (vehiclecontrol_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.138780] (hellocm_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.196950] (camera_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.199430] (vehiclecontrol_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.200015] (-) TimerEvent: {}
+[0.201274] (cmrosutils) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.206337] (camera_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.206937] (vehiclecontrol_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.207392] (camera_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.207477] (vehiclecontrol_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.208091] (vehiclecontrol_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.208362] (camera_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.211326] (cmrosutils) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.212255] (cmrosutils) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.212337] (cmrosutils) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.212396] (hellocm_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.215128] (vehiclecontrol_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.215270] (camera_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.219270] (cmrosutils) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.221468] (hellocm_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.221655] (hellocm_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.221876] (hellocm_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.229330] (hellocm_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.285681] (camera_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.290040] (cmrosutils) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.294339] (camera_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.295311] (camera_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.295613] (vehiclecontrol_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.295735] (camera_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.299782] (cmrosutils) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.299989] (cmrosutils) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.300086] (-) TimerEvent: {}
+[0.300309] (cmrosutils) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.300811] (cmrosutils) StderrLine: {'line': b'CMake Error at CMakeLists.txt:43 (message):\n'}
+[0.301012] (cmrosutils) StderrLine: {'line': b'  Please set desired CarMaker Version in $CARMAKER_VER\n'}
+[0.301057] (cmrosutils) StderrLine: {'line': b'\n'}
+[0.301095] (cmrosutils) StderrLine: {'line': b'\n'}
+[0.301139] (cmrosutils) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.302421] (camera_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.302701] (cmrosutils) CommandEnded: {'returncode': 1}
+[0.311499] (cmrosutils) JobEnded: {'identifier': 'cmrosutils', 'rc': 1}
+[0.311850] (vehiclecontrol_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.311945] (vehiclecontrol_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.312010] (vehiclecontrol_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.312072] (vehiclecontrol_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.312137] (hellocm_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.313242] (hellocm_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.313430] (hellocm_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.313806] (hellocm_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.315461] (hellocm_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.400287] (-) TimerEvent: {}
+[0.413697] (camera_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[0.420285] (vehiclecontrol_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[0.426295] (hellocm_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[0.499558] (vehiclecontrol_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[0.499751] (camera_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[0.500386] (-) TimerEvent: {}
+[0.500632] (hellocm_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[0.504425] (vehiclecontrol_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.504670] (camera_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.504777] (hellocm_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.551475] (camera_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.551677] (hellocm_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.551788] (vehiclecontrol_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.587799] (camera_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.7 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[0.588006] (hellocm_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.7 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[0.588118] (vehiclecontrol_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.7 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[0.591080] (hellocm_msgs) StdoutLine: {'line': b'-- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)\n'}
+[0.591191] (vehiclecontrol_msgs) StdoutLine: {'line': b'-- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)\n'}
+[0.591793] (camera_msgs) StdoutLine: {'line': b'-- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[0.600467] (-) TimerEvent: {}
+[0.663777] (camera_msgs) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[0.666507] (camera_msgs) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.700561] (-) TimerEvent: {}
+[0.751240] (camera_msgs) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[0.767577] (camera_msgs) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[0.795583] (camera_msgs) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.800636] (-) TimerEvent: {}
+[0.874109] (camera_msgs) StdoutLine: {'line': b'-- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)\n'}
+[0.900733] (-) TimerEvent: {}
+[1.000913] (-) TimerEvent: {}
+[1.101095] (-) TimerEvent: {}
+[1.132152] (vehiclecontrol_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[1.135049] (hellocm_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[1.201187] (-) TimerEvent: {}
+[1.301345] (-) TimerEvent: {}
+[1.362256] (camera_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[1.401427] (-) TimerEvent: {}
+[1.500500] (hellocm_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.501515] (-) TimerEvent: {}
+[1.506353] (vehiclecontrol_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.601651] (-) TimerEvent: {}
+[1.701929] (-) TimerEvent: {}
+[1.745284] (camera_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.802065] (-) TimerEvent: {}
+[1.902170] (-) TimerEvent: {}
+[2.002399] (-) TimerEvent: {}
+[2.009720] (vehiclecontrol_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.012014] (hellocm_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.014150] (vehiclecontrol_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[2.014571] (hellocm_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[2.102520] (-) TimerEvent: {}
+[2.121445] (vehiclecontrol_msgs) StdoutLine: {'line': b'-- Found PythonExtra: /usr/bin/python3  \n'}
+[2.125097] (hellocm_msgs) StdoutLine: {'line': b'-- Found PythonExtra: /usr/bin/python3  \n'}
+[2.202661] (-) TimerEvent: {}
+[2.274228] (camera_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.276314] (camera_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[2.302790] (-) TimerEvent: {}
+[2.397450] (camera_msgs) StdoutLine: {'line': b'-- Found PythonExtra: /usr/bin/python3  \n'}
+[2.403009] (-) TimerEvent: {}
+[2.490639] (vehiclecontrol_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[2.497744] (hellocm_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[2.503080] (-) TimerEvent: {}
+[2.530299] (vehiclecontrol_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.4 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[2.532838] (hellocm_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.4 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[2.553108] (hellocm_msgs) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[2.553370] (vehiclecontrol_msgs) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[2.554849] (hellocm_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.555703] (vehiclecontrol_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.555816] (hellocm_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.556758] (vehiclecontrol_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.557617] (hellocm_msgs) StdoutLine: {'line': b'-- Configuring done (2.5s)\n'}
+[2.560680] (vehiclecontrol_msgs) StdoutLine: {'line': b'-- Configuring done (2.5s)\n'}
+[2.585081] (vehiclecontrol_msgs) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[2.592482] (hellocm_msgs) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[2.594140] (vehiclecontrol_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/bashesam33/FS-AI/ros2_ws/build/vehiclecontrol_msgs\n'}
+[2.600656] (vehiclecontrol_msgs) JobEnded: {'identifier': 'vehiclecontrol_msgs', 'rc': 'SIGINT'}
+[2.602867] (hellocm_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/bashesam33/FS-AI/ros2_ws/build/hellocm_msgs\n'}
+[2.603138] (-) TimerEvent: {}
+[2.611300] (hellocm_msgs) JobEnded: {'identifier': 'hellocm_msgs', 'rc': 'SIGINT'}
+[2.703299] (-) TimerEvent: {}
+[2.753267] (camera_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[2.792236] (camera_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.4 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[2.795947] (camera_msgs) StdoutLine: {'line': b'-- Configuring done (2.8s)\n'}
+[2.803400] (-) TimerEvent: {}
+[2.820139] (camera_msgs) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[2.828387] (camera_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/bashesam33/FS-AI/ros2_ws/build/camera_msgs\n'}
+[2.835841] (camera_msgs) JobEnded: {'identifier': 'camera_msgs', 'rc': 'SIGINT'}
+[2.846188] (carmaker_rsds_client) JobSkipped: {'identifier': 'carmaker_rsds_client'}
+[2.846218] (hellocm) JobSkipped: {'identifier': 'hellocm'}
+[2.846228] (hellocm_cmnode) JobSkipped: {'identifier': 'hellocm_cmnode'}
+[2.846236] (-) EventReactorShutdown: {}

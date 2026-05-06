@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "hellocm_msgs__py",
+		"source" : "/home/bashesam33/FS-AI/ros2_ws/build/hellocm_msgs/hellocm_msgs__py"
+	}
+}
