@@ -1,1 +1,0 @@
-Invoking command in '/home/bashesam33/FS-AI/ros2_ws/build/cmrosutils': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/bashesam33/FS-AI/ros2_ws/build/cmrosutils -- -j12 -l12

@@ -1,1 +1,0 @@
-Invoking command in '/home/bashesam33/FS-AI/ros2_ws/build/vehiclecontrol_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/bashesam33/FS-AI/ros2_ws/src/vehiclecontrol_msgs -DCMAKE_INSTALL_PREFIX=/home/bashesam33/FS-AI/ros2_ws/install/vehiclecontrol_msgs
