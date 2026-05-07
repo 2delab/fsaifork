@@ -2,16 +2,6 @@
 
 This note is for anyone cloning `fsai_workspace` and building the ROS 2 workspace that now lives in the `bashrc_addition` branch.
 
-## Where the workspace is
-
-The buildable ROS 2 workspace is in:
-
-```text
-fsai_workspace/fsai_ros2_ws
-```
-
-It is currently on the `bashrc_addition` branch, not `main`.
-
 ## Cloning
 
 Clone the full repo first:
