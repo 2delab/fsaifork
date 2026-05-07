@@ -1,0 +1,12 @@
+# CarMaker camera mounting: Camera (Cam_F) -> Vehicle base (Fr1A)
+# From TF: Fr1A -> Cam_F: x=1.532m, z=0.816m, pitch=15deg (0.262 rad) downward
+# So camera is 1.532m forward and 0.816m above Fr1A, angled 15deg down
+camera_mounting:
+  translation:
+    x: 1.532    # 1.532m in front of vehicle origin (Fr1A)
+    y: 0.0      # Centred
+    z: 0.816    # 0.816m above vehicle origin
+  rotation:
+    roll: 0.0
+    pitch: 0.262   # 15 degrees downward tilt (positive = nose down)
+    yaw: 0.0

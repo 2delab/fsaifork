@@ -1,0 +1,15 @@
+# Camera Mounting Configuration
+# Defines the transformation from Camera Optical Frame to Vehicle Frame (Base Link)
+# X = Forward from Rear Axle
+# Y = Left from Centerline
+# Z = Up from Ground
+
+camera_mounting:
+  translation:
+    x: 1.6   # Camera is 1.6m forward of rear axle (Front Wing / Nosecone)
+    y: 0.0   # Centered laterally
+    z: 0.8   # 0.8m above ground (Roll hoop / Main hoop)
+  rotation:
+    roll: 3.14159   # Rolled 180 degrees (Upside Down / Inverted)
+    pitch: 0.0      # Camera is level with horizon (0 degrees pitch)
+    yaw: 0.0        # Camera points straight forward
