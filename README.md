@@ -6,7 +6,7 @@
 Clone the full repo first:
 
 ```bash
-git clone --recurse-submodules https://github.com/MDXFormulaStudents-AI/fsai_workspace.git
+git clone --recurse-submodules https://github.com/MDXFormulaStudents-AI/fsai_main.git
 ```
 
 ## Already cloned?
@@ -26,17 +26,15 @@ git pull
 git submodule update --init
 ```
 
-## ROS 2 Workspace Branch
 
-After cloning or updating the repo, switch to the branch that contains the ROS 2 workspace:
+## Enter the Repo Directory
+
+After cloning or updating the repo, switch to the directory containing the repository
 
 ```bash
 cd fsai_workspace
-git fetch origin
-git checkout bashrc_addition
-git pull origin bashrc_addition
-git submodule update --init --recursive
 ```
+
 
 ## Install `vision_msgs`
 
@@ -71,17 +69,13 @@ source ~/.bashrc
 
 ## What should build
 
-The workspace is currently set up to build the non-CarMaker packages only. The CarMaker-specific packages are ignored with `COLCON_IGNORE`, so a normal build should produce:
+A normal build should produce:
 
-- `camera_msgs`
 - `fsai_interfaces`
-- `fsai_perception`
-- `hellocm_msgs`
-- `vehiclecontrol_msgs`
 
 ## Add ROS Environment To `~/.bashrc`
 
-To add the recommended ROS networking settings to your `~/.bashrc`, run:
+Finally, to add the recommended ROS networking settings to your `~/.bashrc`, run:
 
 ```bash
 grep -qxF 'export ROS_DOMAIN_ID=42' ~/.bashrc || echo 'export ROS_DOMAIN_ID=42' >> ~/.bashrc
