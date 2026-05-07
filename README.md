@@ -1,6 +1,5 @@
-# FS-AI ROS 2 Workspace Setup
 
-This note is for anyone cloning `fsai_workspace` and building the ROS 2 workspace that now lives in the `bashrc_addition` branch.
+# fsai_main
 
 ## Cloning
 
