@@ -89,3 +89,14 @@ The workspace is currently set up to build the non-CarMaker packages only. The C
 - `fsai_perception`
 - `hellocm_msgs`
 - `vehiclecontrol_msgs`
+
+## Add ROS Environment To `~/.bashrc`
+
+To add the recommended ROS networking settings to your `~/.bashrc`, run:
+
+```bash
+grep -qxF 'export ROS_DOMAIN_ID=42' ~/.bashrc || echo 'export ROS_DOMAIN_ID=42' >> ~/.bashrc
+grep -qxF 'export RMW_IMPLEMENTATION=rmw_fastrtps_cpp' ~/.bashrc || echo 'export RMW_IMPLEMENTATION=rmw_fastrtps_cpp' >> ~/.bashrc
+grep -qxF 'unset ROS_AUTOMATIC_DISCOVERY_RANGE' ~/.bashrc || echo 'unset ROS_AUTOMATIC_DISCOVERY_RANGE' >> ~/.bashrc
+source ~/.bashrc
+```
