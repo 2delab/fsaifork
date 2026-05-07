@@ -10,8 +10,8 @@ package_name = 'fsai_perception'
 def sync_config_files():
     """Copy configs from src/perception/config to package config dir"""
     base_dir = os.path.dirname(os.path.abspath(__file__))
-    source_dir = os.path.join(base_dir, '..', 'config')
     dest_dir = os.path.join(base_dir, 'config')
+    legacy_source_dir = os.path.join(base_dir, '..', 'config')
     files_to_sync = [
         'camera_intrinsics_video.npz',
         'camera_intrinsics_carmaker.npz',
@@ -24,15 +24,20 @@ def sync_config_files():
         os.makedirs(dest_dir)
         
     for f in files_to_sync:
-        src = os.path.join(source_dir, f)
         dst = os.path.join(dest_dir, f)
-        if os.path.exists(src):
-            # If symlink exists (from my previous failed attempt), remove it
-            if os.path.islink(dst):
-                os.unlink(dst)
-            shutil.copy2(src, dst)
-        else:
+        # Prefer the package-local config when it already exists.
+        if os.path.exists(dst):
+            continue
+
+        src = os.path.join(legacy_source_dir, f)
+        if not os.path.exists(src):
             sys.stderr.write(f'setup.py: Warning: {src} not found, skipping\n')
+            continue
+
+        # If a symlink exists (from a previous failed attempt), remove it first.
+        if os.path.islink(dst):
+            os.unlink(dst)
+        shutil.copy2(src, dst)
 
 sync_config_files()
 
