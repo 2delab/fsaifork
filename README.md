@@ -58,7 +58,7 @@ These instructions assume your base ROS installation is already being sourced fr
 If you are starting from the directory that contains the cloned repo:
 
 ```bash
-cd fsai_workspace/fsai_ros2_ws
+cd fsai_ros2_ws
 colcon build
 ```
 
