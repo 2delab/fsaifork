@@ -4,6 +4,7 @@ This workspace now includes checked-in RViz profiles and a launcher script at th
 
 - `./Start_RViz.sh`
 - `./src/rviz_config/carmaker_perception.rviz`
+- `./src/rviz_config/sensors.rviz`
 
 ## Why this is the best fit here
 
@@ -14,7 +15,7 @@ This workspace currently contains message packages, not a utility package with l
 
 That keeps the setup easy to use on any machine without creating a new ROS package just to open RViz.
 
-## Profile
+## Profiles
 
 `carmaker` (default)
 
@@ -24,6 +25,12 @@ That keeps the setup easy to use on any machine without creating a new ROS packa
 - `/slam/markers`
 - `/car_marker`
 - `/detections_image`
+
+`sensors`
+
+- `/lidar/pointcloud`
+- `/camera/image_raw`
+- `/camera/depth`
 
 ## Important note about `Cone3DArray`
 
@@ -39,3 +46,8 @@ After sourcing ROS 2 and your workspace:
 ./Start_RViz.sh
 ```
 
+Open the sensor-only profile:
+
+```bash
+./Start_RViz.sh sensors
+```
