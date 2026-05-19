@@ -32,7 +32,7 @@ git submodule update --init
 After cloning or updating the repo, switch to the directory containing the repository
 
 ```bash
-cd fsai_workspace
+cd fsai_main
 ```
 
 
