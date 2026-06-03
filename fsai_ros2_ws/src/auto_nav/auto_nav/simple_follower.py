@@ -24,8 +24,8 @@ class SimpleFollower(Node):
         super().__init__('simple_follower')
         
         # Parameters
-        self.declare_parameter('constant_gas', 0.3)      # 30% throttle (default)
-        self.declare_parameter('max_steering', 0.6)      # ±34° (safe limit)
+        self.declare_parameter('constant_gas', 0.1)      # 30% throttle (default)
+        self.declare_parameter('max_steering', 0.8)      # ±34° (safe limit)
         self.declare_parameter('steering_gain', 1.0)     # Proportional gain
         
         self.constant_gas = self.get_parameter('constant_gas').get_parameter_value().double_value

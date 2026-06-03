@@ -29,6 +29,7 @@ setup(
             'lqr = auto_nav.lqr:main',
             'ilqr = auto_nav.ilqr:main',
             'teleop_node = auto_nav.teleop_node:main',
+            'map_follower = auto_nav.map_follower:main',
         ],
     },
 )
