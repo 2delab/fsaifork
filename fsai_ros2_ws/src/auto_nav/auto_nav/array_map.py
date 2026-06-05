@@ -28,15 +28,16 @@ class ArrayMap(Node):
             return
 
         pts = np.array(
-            [(m.pose.position.x, m.pose.position.y) for m in msg.markers],
+            [(m.pose.position.x, m.pose.position.y, m.pose.position.z) for m in msg.markers],
             dtype=float,
         )
         n = len(pts)
+        xy = pts[:, :2]
 
         # Find each cone's nearest neighbour.
         nn = np.empty(n, dtype=int)
         for i in range(n):
-            d = np.linalg.norm(pts - pts[i], axis=1)
+            d = np.linalg.norm(xy - xy[i], axis=1)
             d[i] = np.inf
             nn[i] = int(np.argmin(d))
 
@@ -59,7 +60,7 @@ class ArrayMap(Node):
         unmatched = [i for i in range(n) if i not in matched]
         while len(unmatched) >= 2:
             i = unmatched[0]
-            d = np.linalg.norm(pts[unmatched] - pts[i], axis=1)
+            d = np.linalg.norm(xy[unmatched] - xy[i], axis=1)
             d[0] = np.inf
             j = unmatched[int(np.argmin(d))]
             pairs.append((i, j))
@@ -69,7 +70,7 @@ class ArrayMap(Node):
         midpoints = np.array([(pts[i] + pts[j]) / 2.0 for i, j in pairs])
 
         # Order pairs by nearest-neighbour chain on their midpoints.
-        order = self._nn_order(midpoints)
+        order = self._nn_order(midpoints[:, :2])
         pairs = [pairs[k] for k in order]
         midpoints = midpoints[order]
 
@@ -80,14 +81,14 @@ class ArrayMap(Node):
         #     (< 0.3× or > 2.5× median) → jumped to wrong cone or same-side pair
         #     at the start gate where cone counts may be uneven.
         n_pairs = len(pairs)
-        track_dirs = self._track_directions(midpoints)
+        track_dirs = self._track_directions(midpoints[:, :2])
 
-        pair_dists = np.array([np.linalg.norm(pts[j] - pts[i]) for i, j in pairs])
+        pair_dists = np.array([np.linalg.norm(xy[j] - xy[i]) for i, j in pairs])
         median_d   = np.median(pair_dists)
 
         bad = set()
         for k, (i, j) in enumerate(pairs):
-            pair_vec = pts[j] - pts[i]
+            pair_vec = xy[j] - xy[i]
             norm = pair_dists[k]
             if norm < 0.3 * median_d or norm > 2.5 * median_d:
                 bad.add(k)
@@ -113,7 +114,7 @@ class ArrayMap(Node):
             if k in bad:
                 continue
             ci, cj = pts[i], pts[j]
-            vec = ci - midpoints[k]
+            vec = ci[:2] - midpoints[k, :2]
             cross = track_dirs[k][0] * vec[1] - track_dirs[k][1] * vec[0]
             if cross >= 0:
                 a_pts.append(ci); b_pts.append(cj)
@@ -138,6 +139,7 @@ class ArrayMap(Node):
             ps.header.stamp    = stamp
             ps.pose.position.x = float(pt[0])
             ps.pose.position.y = float(pt[1])
+            ps.pose.position.z = float(pt[2])
             ps.pose.orientation.w = 1.0
             path.poses.append(ps)
         self.path_pub.publish(path)
@@ -190,7 +192,7 @@ class ArrayMap(Node):
         m.color.a         = 1.0
         for pt in pts:
             p = Point()
-            p.x, p.y, p.z = float(pt[0]), float(pt[1]), 0.0
+            p.x, p.y, p.z = float(pt[0]), float(pt[1]), float(pt[2])
             m.points.append(p)
         return m
 
