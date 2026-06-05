@@ -31,6 +31,7 @@ setup(
             'teleop_node = auto_nav.teleop_node:main',
             'map_follower = auto_nav.map_follower:main',
             'cone_map_tf = auto_nav.cone_map_tf:main',
+            'tf_map = auto_nav.tf_map:main',
         ],
     },
 )

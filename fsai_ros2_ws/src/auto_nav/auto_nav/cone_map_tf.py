@@ -13,22 +13,12 @@ class ConeMapTf(Node):
         self._broadcaster = tf2_ros.StaticTransformBroadcaster(self)
         self._tf_buffer = tf2_ros.Buffer()
         self._tf_listener = tf2_ros.TransformListener(self._tf_buffer, self)
-        self._car_published = False
         self.create_subscription(MarkerArray, '/carmaker/ObjectList', self._cb, 10)
         self.get_logger().info('cone_map_tf started')
 
     def _cb(self, msg):
         if not msg.markers:
             return
-
-        if not self._car_published:
-            car_tf = TransformStamped()
-            car_tf.header.stamp = self.get_clock().now().to_msg()
-            car_tf.header.frame_id = 'CAR500'
-            car_tf.child_frame_id = 'car'
-            car_tf.transform.rotation.w = 1.0
-            self._broadcaster.sendTransform([car_tf])
-            self._car_published = True
 
         src_frame = msg.markers[0].header.frame_id
         stamp = msg.markers[0].header.stamp
