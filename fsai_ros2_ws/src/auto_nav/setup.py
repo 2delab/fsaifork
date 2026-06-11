@@ -1,4 +1,5 @@
 from setuptools import setup
+from glob import glob
 
 package_name = 'auto_nav'
 
@@ -10,6 +11,7 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
+        ('share/' + package_name + '/launch', glob('launch/*.py')),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -32,6 +34,11 @@ setup(
             'map_follower = auto_nav.map_follower:main',
             'cone_map_tf = auto_nav.cone_map_tf:main',
             'tf_map = auto_nav.tf_map:main',
+            'odometry = auto_nav.odometry:main',
+            'odom_test = auto_nav.odom_test:main',
+            'distance_follower = auto_nav.distance_follower:main',
+            'fr1a_capture_node = auto_nav.fr1a_capture_node:main',
+            'reactive_nav = auto_nav.reactive_nav:main',
         ],
     },
 )
